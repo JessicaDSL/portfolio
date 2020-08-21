@@ -2,14 +2,14 @@ import React from 'react';
 
 // import { Container } from './styles';
 
-const ContactPage = () => {
+const HomePage = () => {
   return (
     <div>
       <h1>
-        Contato
+        HOME
       </h1>
     </div>
     );
 }
 
-export default ContactPage;
+export default HomePage;

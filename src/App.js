@@ -1,19 +1,19 @@
 import React from 'react';
 
 
-import ContactPages from './pages/ContactPages';
+import ContactPage from './pages/ContactPage';
 import Header from './components/Header';
-import HomePages from './pages/HomePages';
-import LayoutPages from './pages/LayoutPages';
+import HomePage from './pages/HomePage';
+import LayoutPage from './pages/LayoutPage';
 
 
 function App() {
   return (
     <div className="App">
-      <ContactPages />
       <Header />
-      <HomePages />
-      <LayoutPages />
+      <ContactPage />
+      <HomePage />
+      <LayoutPage />
     </div>
   );
 }
