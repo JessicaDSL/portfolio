@@ -1,9 +1,11 @@
 import React from 'react';
 
+import ContactPages from './pages/ContactPages';
+
 function App() {
   return (
     <div className="App">
-      <h1> Hello World! </h1>
+      <ContactPages />
     </div>
   );
 }
