@@ -1,18 +1,20 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 // import { Container } from './styles';
 
 const Header = () => {
   return (
     <div>
       <button>
-        HOME
+        <Link to={`/`}>HOME</Link>
       </button>
       <button>
-        LAYOUTS
+        <Link to={`/layout-page`}>LAYOUTS</Link>
       </button>
       <button>
-        CONTACT
+        <Link to={`/contact-page`}>CONTACT</Link>
       </button>
     </div>
   );

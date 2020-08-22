@@ -1,20 +1,16 @@
 import React from 'react';
 
 
-import ContactPage from './pages/ContactPage';
-import Header from './components/Header';
-import HomePage from './pages/HomePage';
-import LayoutPage from './pages/LayoutPage';
+import Routes from './routes';
+import GlobalStyle from './styles/global';
 
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <ContactPage />
-      <HomePage />
-      <LayoutPage />
-    </div>
+    <>
+      <Routes />
+      <GlobalStyle />
+    </>
   );
 }
 
