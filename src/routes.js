@@ -7,7 +7,7 @@ import ContactPage from "./pages/ContactPage";
 
 export default function Routes() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Route>
         <Route path="/" exact component={HomePage} />
         <Route path="/contact-page" component={ContactPage} />
