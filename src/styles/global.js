@@ -8,9 +8,9 @@ export default createGlobalStyle`
     outline: 0;
   }
 
-  html, box-sizing, #root {
-    min-height: 100%;
-  }
+ body, html {
+   height: 100%100%
+ }
 
   body {
     -webkit-font-smoothing: antialiased !important;
@@ -18,5 +18,9 @@ export default createGlobalStyle`
 
   button {
     cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
   }
 `;
