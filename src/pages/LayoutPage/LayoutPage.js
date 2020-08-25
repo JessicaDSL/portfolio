@@ -1,14 +1,14 @@
 import React from "react";
 
 // import { Container } from './styles';
-import Header from "../../components/Header";
+import Hero from "../../components/Hero";
 
 const LayoutPage = () => {
   return (
     <div>
+      <Hero />
       <h1>
-        <Header />
-        LAYOUT
+        Layout
       </h1>
     </div>
   );

@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
+import Gadugi from '../assets/fonts/gadugi-2.ttf';
+
 export default createGlobalStyle`
   *{
     margin: 0;
@@ -9,7 +11,7 @@ export default createGlobalStyle`
   }
 
  body, html {
-   height: 100%100%
+   height: 100% 100%;
  }
 
   body {
@@ -22,5 +24,14 @@ export default createGlobalStyle`
 
   a {
     text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  @font-face {
+    font-family: Gadugi;
+    src: url(${Gadugi});
   }
 `;
