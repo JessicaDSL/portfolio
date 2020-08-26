@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import Fundo from "../../../assets/image/fundo-total.png";
+import Fundo from "../../../assets/image/notify/fundo-total.png";
 
 export const Container = styled.div`
   height: 600px;

@@ -34,6 +34,7 @@ export const Content = styled.div`
     padding: 11px
   }
   button {
+    cursor: pointer;
     border-radius: 0 10px 10px 0;
     border: 0;
     background-color: #2ecc71;

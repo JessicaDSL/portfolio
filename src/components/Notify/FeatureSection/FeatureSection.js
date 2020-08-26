@@ -1,9 +1,9 @@
 import React from "react";
 
 import { Container, List, ListItem } from "./styles";
-import Settings from '../../../assets/image/setting.png';
-import Star from '../../../assets/image/star.png';
-import World from '../../../assets/image/world.png';
+import Settings from '../../../assets/image/notify/setting.png';
+import Star from '../../../assets/image/notify/star.png';
+import World from '../../../assets/image/notify/world.png';
 
 
 const list = [

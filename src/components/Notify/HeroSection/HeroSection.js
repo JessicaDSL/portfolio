@@ -2,7 +2,7 @@ import React from "react";
 
 import { Container, List, ListItem, Content } from "./styles";
 import { GrApple, GrWindows, GrAndroid } from "react-icons/gr";
-import Phone from "../../../assets/image/mao-iphone.png";
+import Phone from "../../../assets/image/notify/mao-iphone.png";
 
 function HeroSection() {
   return (
