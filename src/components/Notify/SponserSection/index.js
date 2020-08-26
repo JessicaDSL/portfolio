@@ -1,3 +1,3 @@
-import SponserSection from './SponserSection';
+import SponserSection from "./SponserSection";
 
 export default SponserSection;

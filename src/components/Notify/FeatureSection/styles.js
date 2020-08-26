@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 
 export const Container = styled.div`
   min-height: 335px;
@@ -13,6 +14,7 @@ export const Container = styled.div`
     margin: 20px 0;
     font-size: large;
   }
+
   p {
     color: #848484;
     font-family: "Helvetica Neue", sans-serif;
@@ -20,6 +22,15 @@ export const Container = styled.div`
     line-height: 24px;
     font-weight: lighter;
   }
+
+  ${media.lessThan("medium")`
+   flex-wrap: wrap;
+  `}
+
+  ${media.between("medium", "large")`h2{
+      min-width: 100px;
+    }
+  `}
 `;
 
 export const List = styled.ul`

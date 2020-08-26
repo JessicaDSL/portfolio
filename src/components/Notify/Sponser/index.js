@@ -1,2 +1,3 @@
-import Sponser from './Sponser';
+import Sponser from "./Sponser";
+
 export default Sponser;

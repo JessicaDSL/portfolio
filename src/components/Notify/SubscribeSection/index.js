@@ -1,3 +1,3 @@
-import SubscribeSection from './SubscribeSection';
+import SubscribeSection from "./SubscribeSection";
 
 export default SubscribeSection;

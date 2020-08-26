@@ -1,3 +1,3 @@
-import SponserList from './SponserList';
+import SponserList from "./SponserList";
 
 export default SponserList;

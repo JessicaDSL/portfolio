@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Figure, Container, ListItem, List } from './styles'; 
+import { Figure, Container, ListItem, List } from "./styles";
 
 const Sponser = ({ image }) => {
   return (
@@ -16,6 +16,6 @@ const Sponser = ({ image }) => {
       </List>
     </Container>
   );
-}
+};
 
 export default Sponser;

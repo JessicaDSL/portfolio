@@ -1,22 +1,18 @@
-import React from 'react';
+import React from "react";
 
-import { Container } from './styles';
+import { Container } from "./styles";
 
-import { list } from './content';
-import Sponser from '../Sponser';
+import { list } from "./content";
+import Sponser from "../Sponser";
 
 const SponserList = () => {
-    return(
+  return (
     <Container>
       {list.map((item, index) => (
-        <Sponser
-          key={index}
-          image={item.image}
-        />
-        
+        <Sponser key={index} image={item.image} />
       ))}
     </Container>
   );
-}
+};
 
 export default SponserList;

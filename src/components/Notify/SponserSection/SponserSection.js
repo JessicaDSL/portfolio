@@ -14,7 +14,6 @@ import {
 const SponserSection = () => {
   return (
     <Container>
-      
       <p>
         <span>
           “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
@@ -46,7 +45,6 @@ const SponserSection = () => {
         <GrLinkedin />
         <GrYoutube />
       </Content>
-
     </Container>
   );
 };

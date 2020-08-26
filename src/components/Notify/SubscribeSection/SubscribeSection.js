@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, Content, Form } from "./styles";
+import { Container, Content, Form, Iframe } from "./styles";
 
 const SubscribeSection = () => {
   return (
@@ -16,12 +16,10 @@ const SubscribeSection = () => {
         </p>
         <Form>
           <input type="email" placeholder="Email Address" required />
-          <button>
-            Notify
-          </button>
+          <button>Notify</button>
         </Form>
       </Content>
-      <iframe
+      <Iframe
         title="naruto-run"
         width="450"
         height="290"
@@ -29,7 +27,7 @@ const SubscribeSection = () => {
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-      ></iframe>
+      ></Iframe>
     </Container>
   );
 };

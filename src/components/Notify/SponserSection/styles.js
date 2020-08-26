@@ -39,12 +39,12 @@ export const Container = styled.div`
     font-style: italic;
   }
 
-    img {
-      display: flex;
-      margin: 0 0 15px 0;
-    }
+  img {
+    display: flex;
+    margin: 0 0 15px 0;
+  }
 
-  ${media.lessThan("1040px")`
+  ${media.lessThan("1200px")`
   height:366px;
 
   p{
@@ -54,13 +54,12 @@ export const Container = styled.div`
   }
 
   h2{
-    margin: 50px 20px 10px 20px;
+    margin: 0px 20px 10px 20px;
   }
 
   h3{
-    margin:0;
+    margin: 10px 0 0 0;
   }
-
   `}
 `;
 
@@ -76,7 +75,7 @@ export const Content = styled.div`
       color: #2ecc71;
     }
     ${media.lessThan("500px")`
-      margin: 20px 0 0 0;
+      margin: 20px 10px 0 0;
     `}
-    }
+  }
 `;

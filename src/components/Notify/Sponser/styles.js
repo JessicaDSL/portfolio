@@ -1,16 +1,12 @@
 import styled from "styled-components";
 
-
-export const Container = styled.div`
-`;
+export const Container = styled.div``;
 
 export const List = styled.ul`
   padding: 0;
 `;
 
-export const ListItem = styled.li`
-
-`;
+export const ListItem = styled.li``;
 
 export const Figure = styled.figure`
   background-color: #2ecc71;

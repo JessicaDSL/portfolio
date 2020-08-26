@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 
 import Fundo from "../../../assets/image/notify/fundo-total.png";
 
@@ -14,6 +15,13 @@ export const Container = styled.div`
     position: relative;
     left: 80px;
   }
+  ${media.lessThan("960px")`
+  max-height: 400px;
+  align-items: center;
+  img {
+    display: none;
+  }
+`}
 `;
 
 export const Content = styled.div`

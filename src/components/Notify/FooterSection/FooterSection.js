@@ -1,18 +1,18 @@
-import React from 'react';
+import React from "react";
 
-import { Container } from './styles';
+import { Container } from "./styles";
 
 const FooterSection = () => {
-  return(
+  return (
     <Container>
-      <p>Contact</p>
-      <p>Download</p>
-      <p>Press</p>
-      <p>Email</p>
-      <p>Support</p>
-      <p>Privacy Policy</p>
+      <a href='#'>Contact</a>
+      <a href='#'>Download</a>
+      <a href='#'>Press</a>
+      <a href='#'>Email</a>
+      <a href='#'>Support</a>
+      <a href='#'>Privacy Policy</a>
     </Container>
   );
-}
+};
 
 export default FooterSection;
