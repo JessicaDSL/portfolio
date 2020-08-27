@@ -1,15 +1,16 @@
 import React from 'react';
+import './styles.css';
 
 
-import Routes from './routes';
-import GlobalStyle from './styles/global';
+//import Routes from './routes';
+//import GlobalStyle from './styles/global';
+import CarStorePage from './pages/CarStorePage';
 
 
 function App() {
   return (
     <>
-      <Routes />
-      <GlobalStyle />
+      <CarStorePage />
     </>
   );
 }
