@@ -24,10 +24,6 @@ const HomePage = () => {
         </p>
       </div>
       </Content>
-      <Section>
-        <img src={Circles} alt=""/>
-        <h2>Jéssica Lima</h2>
-      </Section>
     </Container>
   );
 };
