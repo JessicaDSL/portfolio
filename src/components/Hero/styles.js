@@ -69,7 +69,7 @@ export const Btn = styled.button`
   border: 0;
   color: #f5f5f5;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   transition: 0.2s all ease-in;
 
   &:hover {
