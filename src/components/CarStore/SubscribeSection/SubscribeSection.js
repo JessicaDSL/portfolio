@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Content, List, ListItem, Article } from './styles';
+import { Container, Content, List, ListItem, Article, Form, Label, PlaceHolder, Button } from './styles';
 
 const SubscribeSection = () => {
   return(
