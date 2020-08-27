@@ -50,14 +50,15 @@ export const Ul = styled.ul`
 
   ${media.lessThan("1024px")`
   flex-flow: column nowrap;
-  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   transform: ${({ open }) => (open ? "translateX(0%)" : "translateX(100%)")};
   top: 0;
   right: 0;
   height: 100vh;
   width: 100%;
-  padding-top: 3.5rem;
+  padding-top: 3.4rem;
   transition: transform 0.3s ease-in-out;
   `}
 `;
