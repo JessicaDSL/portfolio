@@ -1,8 +1,7 @@
-import styled from 'styled-components';
-import media from 'styled-media-query';
+import styled from "styled-components";
+import media from "styled-media-query";
 
-import Desktop from '../../assets/image/back-home-1.png'
-
+import Desktop from "../../assets/image/back-home-1.png";
 
 export const Container = styled.div`
   height: 100vh;
@@ -11,9 +10,10 @@ export const Container = styled.div`
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  
+
   ${media.lessThan("900px")`
-    background-image: none;
+  background-size: cover;
+  background-repeat: no-repeat;
   `}
 `;
 
@@ -23,19 +23,19 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 150px 0;
+  margin: 140px 0;
   color: #f5f5f5;
   ${media.lessThan("1024px")`
-    display: none;
+    
   `}
 
   h1 {
     color: #de3163;
     font-family: Lato;
-    letter-spacing: 4px;
-    font-size: 130px;
+    letter-spacing: 3px;
+    font-size: 120px;
     position: relative;
-    top: -50px;
+    top: -35px;
   }
 
   p {
@@ -43,13 +43,14 @@ export const Content = styled.div`
     font-weight: 400;
     font-size: 14px;
     position: relative;
-    top: -60px;
+    top: -40px;
   }
 
   h3 {
     font-family: Lato;
     font-weight: 200;
-    font-size: 50px;
+    font-size: 40px;
+    
   }
 
   small {
@@ -58,30 +59,38 @@ export const Content = styled.div`
     font-size: 20px;
   }
 
-  ${media.lessThan("1024px")`
+  ${media.lessThan("768px")`
     h1, p, h3, small{
-      display: none;
+      white-space: nowrap;
+    } 
+    h1 {
+      font-size: 70px;
+      margin: -20px 0 0 0;
+      letter-spacing: 0px;
+    }
+    p {
+      font-size: 10px;
+    }
+    h3 {
+      font-size: 26px;
+      padding: 40px 0 20px 0; 
+    }
+    small {
+      font-size: 15px;
+      margin: -15px 0 0 0; 
     }
   `}
-`;
-
-export const Section = styled.div`
-  display: none;
 
   ${media.lessThan("1024px")`
-    display: flex;
-    align-items: center;
-    background: #e76b8f;
-    height: 100vh;
-    flex-direction: column;
-    font-family: Gadugi;
-    color: #f1f1f1;
-    font-size: 30px;
-    
-    img{ 
-      width: 400px;
-      height:400px;
-      margin: 110px 0 20px 0;
+  margin: 0;
+  padding: 130px;
+  display: flex;
+
+    h1, p, h3, small{
+      display: flex;
+      position: static;
+      justify-content: center;
+      white-space: nowrap;
     }
   `}
 `;
