@@ -41,8 +41,8 @@ export const Container = styled.div`
 
   img {
     display: flex;
-    margin: 0 0 15px 0;
   }
+
 
   ${media.lessThan("1200px")`
   height:366px;
@@ -79,3 +79,29 @@ export const Content = styled.div`
     `}
   }
 `;
+
+
+export const SponserList = styled.div`
+  display: flex;
+  background-color: #2ecc71;
+  cursor: pointer;
+  img {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  ${media.lessThan("1200px")`
+    
+  `}
+`;
+
+export const Figure = styled.div``
+
+export const List = styled.ul``
+
+export const ListItem = styled.li`
+
+
+`

@@ -1,7 +1,6 @@
 import React from "react";
 
-import { Container, Content } from "./styles";
-import SponserList from "../SponserList";
+import { Container, Content, SponserList, List, ListItem } from "./styles";
 import {
   GrPinterest,
   GrFacebook,
@@ -10,6 +9,8 @@ import {
   GrLinkedin,
   GrYoutube,
 } from "react-icons/gr";
+
+import { list } from "./content";
 
 const SponserSection = () => {
   return (
@@ -25,11 +26,15 @@ const SponserSection = () => {
 
       <h3>Jane Hunt</h3>
 
-      <ul>
-        <li>
-          <SponserList />
-        </li>
-      </ul>
+      <List>
+        <ListItem>
+          <SponserList>
+            {list.map((item, index) => (
+              <img src={item.image} alt="icone" key={index} image={item.image} />
+            ))}
+          </SponserList>
+        </ListItem>
+      </List>
 
       <h2>Say Hi & Get in Touch</h2>
 
