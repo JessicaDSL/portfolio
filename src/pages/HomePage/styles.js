@@ -33,7 +33,7 @@ export const Content = styled.div`
     color: #de3163;
     font-family: Lato;
     letter-spacing: 4px;
-    font-size: 135px;
+    font-size: 130px;
     position: relative;
     top: -50px;
   }
