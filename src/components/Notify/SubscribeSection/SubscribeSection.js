@@ -1,12 +1,15 @@
 import React from "react";
 
-import { Container, Content, Form, Iframe } from "./styles";
+import { Container, Content, Iframe } from "./styles";
 
 const SubscribeSection = () => {
   return (
     <Container>
+
       <Content>
+
         <strong>Get Notified Of Any Updates!</strong>
+
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           fringilla fringilla nisl congue congue. Maecenas nec condimentum
@@ -14,11 +17,14 @@ const SubscribeSection = () => {
           nisl at, hendrerit risusuis ornare luctus id sollicitudin ante
           lobortis at.
         </p>
-        <Form>
+
+        <form>
           <input type="email" placeholder="Email Address" required />
           <button>Notify</button>
-        </Form>
+        </form>
+
       </Content>
+
       <Iframe
         title="naruto-run"
         width="450"
@@ -28,6 +34,7 @@ const SubscribeSection = () => {
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></Iframe>
+      
     </Container>
   );
 };
