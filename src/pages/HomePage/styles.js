@@ -19,11 +19,12 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   display: flex;
+  height: 400px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 140px 0;
+  margin: 100px 0 0 0;
   color: #f5f5f5;
   ${media.lessThan("1024px")`
     
