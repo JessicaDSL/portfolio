@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import media from "styled-media-query";
 
 import Gadugi from '../assets/fonts/gadugi-2.ttf';
 
@@ -16,6 +17,9 @@ export default createGlobalStyle`
 
   body {
     -webkit-font-smoothing: antialiased !important;
+    ${media.lessThan("360px")`
+      font-size: 12px;
+    `}
   }
 
   button {
