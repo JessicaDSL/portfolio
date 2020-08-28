@@ -20,60 +20,60 @@ export const Container = styled.div`
     margin: 0 0 30px 0;
   }
 
-  h3 {
+  small {
     font-size: 16px;
     color: #2e2e2e;
     font-family: Raleway;
     margin: 0 0 30px 0;
+    font-weight: bolder;
   }
 
-  h2 {
+  strong {
     font-size: 24px;
-    color: #000000;
+    color: #010101;
     font-family: Raleway;
     text-align: center;
-    margin: 0 0 30px 0;
+    margin: 20px 0 20px 0;
   }
 
   span {
     font-style: italic;
   }
 
-  img {
-    display: flex;
-  }
-
-
   ${media.lessThan("1200px")`
   height:366px;
+  justify-content: space-around;
 
   p{
-    text-align: center;
     margin: 0 20px 5px 20px;
     line-height: 20px;
   }
 
-  h2{
-    margin: 0px 20px 10px 20px;
+  strong{
+    margin: 0;
   }
 
-  h3{
-    margin: 10px 0 0 0;
+  small{
+    margin: 0;
   }
   `}
 `;
 
-export const Content = styled.div`
+export const Ul = styled.div`
   display: flex;
   justify-content: center;
+  list-style: none;
+  cursor: pointer;
 
   svg {
     color: #d6d5d5;
     font-size: 20px;
     margin: 0 10px 0 0;
+
     &:hover {
       color: #2ecc71;
     }
+
     ${media.lessThan("500px")`
       margin: 20px 10px 0 0;
     `}
@@ -81,27 +81,22 @@ export const Content = styled.div`
 `;
 
 
-export const SponserList = styled.div`
+export const Content = styled.div`
   display: flex;
-  background-color: #2ecc71;
   cursor: pointer;
+
   img {
+    margin: 0 1px;
     opacity: 1;
     transition: 0.3s ease-in-out;
+    
     &:hover {
+      background-color: #2ecc71;
       opacity: 0.5;
     }
   }
   ${media.lessThan("1200px")`
-    
+    display: none;
   `}
 `;
 
-export const Figure = styled.div``
-
-export const List = styled.ul``
-
-export const ListItem = styled.li`
-
-
-`

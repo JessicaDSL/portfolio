@@ -1,5 +1,3 @@
-import "../SponserSection/styles";
-
 import One from "../../../assets/image/notify/one.png";
 import Two from "../../../assets/image/notify/two.png";
 import Three from "../../../assets/image/notify/three.png";

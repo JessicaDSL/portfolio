@@ -1,6 +1,4 @@
 import React from "react";
-
-import { Container, Content, SponserList, List, ListItem } from "./styles";
 import {
   GrPinterest,
   GrFacebook,
@@ -10,7 +8,10 @@ import {
   GrYoutube,
 } from "react-icons/gr";
 
+import { Container, Content, Ul } from "./styles";
 import { list } from "./content";
+
+
 
 const SponserSection = () => {
   return (
@@ -24,32 +25,52 @@ const SponserSection = () => {
         </span>
       </p>
 
-      <h3>Jane Hunt</h3>
+      <small>Jane Hunt</small>
 
-      <List>
-        <ListItem>
-          <SponserList>
-            {list.map((item, index) => (
-              <img src={item.image} alt="icone" key={index} image={item.image} />
-            ))}
-          </SponserList>
-        </ListItem>
-      </List>
+      <Content>
+        {list.map((item, index) => (
+          <img src={item.image} alt="icone" key={index} image={item.image} />
+        ))}
+      </Content>
 
-      <h2>Say Hi & Get in Touch</h2>
+      <strong>Say Hi & Get in Touch</strong>
 
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse.
       </p>
 
-      <Content>
-        <GrPinterest />
-        <GrFacebook />
-        <GrTwitter />
-        <GrGoogle />
-        <GrLinkedin />
-        <GrYoutube />
-      </Content>
+      <Ul>
+        <li>
+          <a href="#">
+            <GrPinterest />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <GrFacebook />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <GrTwitter />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <GrGoogle />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <GrLinkedin />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <GrYoutube />
+          </a>
+        </li>
+      </Ul>
     </Container>
   );
 };
