@@ -9,22 +9,20 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  h1 {
+    margin: 0 0 0 8px;
+    color: #f1f1f1;
+    font-family: Lato;
+  }
   ${media.lessThan("1024px")`
   background: #111111;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-  position: fixed;
   `};
 `;
 
 export const Logo = styled.div`
   margin: 0 0 0 70px;
   display: flex;
-  color: #f1f1f1;
-  font-family: Lato;
-
-  h1 {
-    margin: 0 0 0 8px;
-  }
 
   img {
     width: 45px;
@@ -32,7 +30,7 @@ export const Logo = styled.div`
   }
 
   ${media.lessThan("1024px")`
-      margin: 0 0 0 30px;
+      margin: 0 0 0 20px;
   `};
 `;
 
@@ -40,12 +38,20 @@ export const Ul = styled.ul`
   display: flex;
   justify-content: space-around;
   color: white;
+  padding: 0 60px 0 0;
+  h1 {
+    font-size: 14px;
+    padding: 16px 22px;
+    letter-spacing: 3px;
+    background: none;
+    border: 0;
+    color: #f5f5f5;
+    transition: 0.2s all ease-in;
 
-  li {
-    cursor: pointer;
-    font-family: Lato;
-    font-weight: bold;
-    font-size: 16px;
+    &:hover {
+      border-bottom: 6px solid #de3163;
+      color: #de3163;
+    }
   }
 
   ${media.lessThan("1024px")`
@@ -63,22 +69,6 @@ export const Ul = styled.ul`
   `}
 `;
 
-export const Btn = styled.button`
-  padding: 16px 22px;
-  letter-spacing: 2px;
-  background: none;
-  border: 0;
-  color: #f5f5f5;
-  font-weight: 500;
-  font-size: 14px;
-  transition: 0.2s all ease-in;
-
-  &:hover {
-    border-bottom: 4px solid #de3163;
-    color: #de3163;
-  }
-`;
-
 export const StyledBurguer = styled.div`
   width: 2rem;
   height: 2rem;
@@ -87,8 +77,8 @@ export const StyledBurguer = styled.div`
   right: 20px;
   z-index: 20;
   display: none;
-  
-  ${media.lessThan("1024px")`
+
+  ${media.lessThan("768px")`
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;

@@ -25,17 +25,17 @@ const RightNav = ({ open }) => {
     <Ul open={open}>
       <li>
         <Link to={`/`}>
-          <Btn>HOME</Btn>
+          <h1>HOME</h1>
         </Link>
       </li>
       <li>
         <Link to={`/layout-page`}>
-          <Btn>LAYOUTS</Btn>
+          <h1>LAYOUTS</h1>
         </Link>
       </li>
       <li>
         <Link to={`/contact-page`}>
-          <Btn>CONTACT</Btn>
+          <h1>CONTACT</h1>
         </Link>
       </li>
     </Ul>
