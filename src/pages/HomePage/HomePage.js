@@ -1,9 +1,7 @@
 import React from "react";
 
-import { Container, Content, Section } from "./styles";
-//import Header from "../../components/Header";
+import { Container, Content} from "./styles";
 import Hero from "../../components/Hero";
-import Circles from '../../assets/image/circles.png';
 
 const HomePage = () => {
   return (
