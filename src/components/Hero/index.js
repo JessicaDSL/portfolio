@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import { StyledBurguer, Ul, Nav, Btn, Logo } from "./styles";
+import { StyledBurguer, List, Nav, Logo } from "./styles";
 
 import Icone from "../../assets/image/icone-5.png";
 
@@ -22,7 +22,7 @@ const Burguer = () => {
 
 const RightNav = ({ open }) => {
   return (
-    <Ul open={open}>
+    <List open={open}>
       <li>
         <Link to={`/`}>
           <h1>HOME</h1>
@@ -38,7 +38,7 @@ const RightNav = ({ open }) => {
           <h1>CONTACT</h1>
         </Link>
       </li>
-    </Ul>
+    </List>
   );
 };
 
