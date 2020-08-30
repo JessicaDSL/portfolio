@@ -1,16 +1,30 @@
 import React from "react";
 
-import { Container } from "./styles";
+import { Container, List, ListItem } from "./styles";
 
 const FooterSection = () => {
   return (
     <Container>
-      <a href='#'>Contact</a>
-      <a href='#'>Download</a>
-      <a href='#'>Press</a>
-      <a href='#'>Email</a>
-      <a href='#'>Support</a>
-      <a href='#'>Privacy Policy</a>
+      <List>
+        <ListItem>
+          <a href="#">Contact</a>
+        </ListItem>
+        <ListItem>
+          <a href="#">Download</a>
+        </ListItem>
+        <ListItem>
+          <a href="#">Press</a>
+        </ListItem>
+        <ListItem>
+          <a href="#">Email</a>
+        </ListItem>
+        <ListItem>
+          <a href="#">Support</a>
+        </ListItem>
+        <ListItem>
+          <a href="#">Privacy Policy</a>
+        </ListItem>
+      </List>
     </Container>
   );
 };
