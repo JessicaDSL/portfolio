@@ -8,7 +8,7 @@ const SubscribeSection = () => {
 
       <Content>
 
-        <strong>Get Notified Of Any Updates!</strong>
+        <h2>Get Notified Of Any Updates!</h2>
 
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse

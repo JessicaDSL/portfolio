@@ -11,8 +11,7 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-
-  strong {
+  h2 {
     color: #222222;
     font-family: Raleway;
     font-size: 20px;
@@ -50,33 +49,37 @@ export const Content = styled.div`
   }
 
   ${media.lessThan("500px")`
-    height: 300px;
     justify-content: center;
-    
+    flex-wrap: nowrap;
+    margin: 10px;
+    p {
+    color: #848484;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    max-width: 550px;
+    text-align: left;
+    margin: 30px 10px;
+    }
+    form {
+      display: flex;
+    }
+    input {
+      border-radius: 10px 0 0 10px;
+      border: 1px solid #c8c8c8;
+      color: #848484;
+      font-size: 18px;
+      width: 190px;
+      margin: 0 0 0 10px;
+    }
+    h2 {
+      margin: 0 10px;
+    }
     button {
-    width: 100px;
-    height: 55px;
-    border-radius: 0 10px 10px 0;
-    border: 0;
-    background-color: #2ecc71;
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    margin: 10px 0;
-  }
-
-  p {
-  color: #848484;
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  line-height: 14px;
-  max-width: 550px;
-  text-align: left;
-  }
-  `}
+      margin: 0 10px 0 0;
+    }
+    `}
 `;
-
 
 export const Iframe = styled.iframe`
   ${media.lessThan("1020px")`
