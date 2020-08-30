@@ -28,7 +28,7 @@ export const Container = styled.div`
     font-weight: bolder;
   }
 
-  strong {
+  b {
     font-size: 24px;
     color: #010101;
     font-family: Raleway;

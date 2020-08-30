@@ -29,11 +29,11 @@ const SponserSection = () => {
 
       <Content>
         {list.map((item, index) => (
-          <img src={item.image} alt="icone" key={index} image={item.image} />
+          <img src={item.image} alt="icone" key={index} />
         ))}
       </Content>
 
-      <strong>Say Hi & Get in Touch</strong>
+      <b>Say Hi & Get in Touch</b>
 
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse.
