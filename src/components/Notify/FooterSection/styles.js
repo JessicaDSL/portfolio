@@ -16,8 +16,18 @@ export const Container = styled.div`
     cursor: pointer;
     margin: 0 20px 0 0;
     ${media.lessThan("medium")`
-    &:last-child {
-      margin: 0 5px 0 0;
+      font-size: 12px;
+      margin: 0 10px 0 0;
+      &:last-child {
+        margin: 0 5px 0 0;
+      }
     `}
   }
 `;
+
+export const List = styled.ul`
+  display: flex;
+  padding: 0;
+`;
+
+export const ListItem = styled.li``;
