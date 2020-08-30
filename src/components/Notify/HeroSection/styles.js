@@ -19,7 +19,7 @@ export const Container = styled.div`
 
   ${media.lessThan("960px")`
   max-height: 400px;
-  align-items: center;
+  
 
   img {
     display: none;
@@ -29,7 +29,7 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   align-self: center;
-
+  margin: 0 40px;
   h1 {
     font-size: 60px;
     font-family: Pacifico;
@@ -46,6 +46,7 @@ export const Content = styled.div`
     font-family: "Roboto", sans-serif;
     color: white;
     max-width: 400px;
+    font-weight: bold;
   }
 `;
 
