@@ -36,7 +36,7 @@ export const ListItem = styled.li`
     font-weight: lighter;
   }
 
-  h1 {
+  b {
     color: #222222;
     font-family: Raleway;
     font-size: medium;

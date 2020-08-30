@@ -11,7 +11,7 @@ const FeatureSection = () => {
         {list.map((item, index) =>
           <ListItem key={index}>
              <img src={item.image} alt="icone"/>
-             <h1>{item.title}</h1>
+             <b>{item.title}</b>
              <p>{item.descripition}</p>
           </ListItem>
         )}
