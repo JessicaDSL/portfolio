@@ -8,7 +8,7 @@ import {
   GrYoutube,
 } from "react-icons/gr";
 
-import { Container, Content, Ul } from "./styles";
+import { Container, Content, List, ListItem } from "./styles";
 import { list } from "./content";
 
 
@@ -39,38 +39,38 @@ const SponserSection = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse.
       </p>
 
-      <Ul>
-        <li>
+      <List>
+        <ListItem>
           <a href="#">
             <GrPinterest />
           </a>
-        </li>
-        <li>
+        </ListItem>
+        <ListItem>
           <a href="#">
             <GrFacebook />
           </a>
-        </li>
-        <li>
+        </ListItem>
+        <ListItem>
           <a href="#">
             <GrTwitter />
           </a>
-        </li>
-        <li>
+        </ListItem>
+        <ListItem>
           <a href="#">
             <GrGoogle />
           </a>
-        </li>
-        <li>
+        </ListItem>
+        <ListItem>
           <a href="#">
             <GrLinkedin />
           </a>
-        </li>
-        <li>
+        </ListItem>
+        <ListItem>
           <a href="#">
             <GrYoutube />
           </a>
-        </li>
-      </Ul>
+        </ListItem>
+      </List>
     </Container>
   );
 };

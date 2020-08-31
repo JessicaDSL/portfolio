@@ -59,7 +59,7 @@ export const Container = styled.div`
   `}
 `;
 
-export const Ul = styled.div`
+export const List = styled.ul`
   display: flex;
   justify-content: center;
   list-style: none;
@@ -79,6 +79,8 @@ export const Ul = styled.div`
     `}
   }
 `;
+
+export const ListItem = styled.li``
 
 
 export const Content = styled.div`
