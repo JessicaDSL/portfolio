@@ -1,16 +1,23 @@
-import React from 'react';
+import React from "react";
 
-// import { Container } from './styles';
+//import { IoLogoLinkedin, IoLogoInstagram, IoLogoGithub, IoMdMail } from "react-icons/io";
+
+
+//import Photo from "../../assets/image/foto-contact-dois.png";
+//import Map from "../../assets/image/map.png";
+import { Container, Content } from "./styles";
+import Hero from "../../components/Hero";
 
 
 const ContactPage = () => {
   return (
-      <div>
-        <h1>
-          CONTATO
-        </h1>
-      </div>
-    );
-}
+    <Container>
+      <Hero />
+      <Content>
+        <h1>Contact</h1>
+      </Content>
+    </Container>
+  );
+};
 
 export default ContactPage;

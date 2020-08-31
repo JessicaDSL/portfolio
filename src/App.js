@@ -1,13 +1,16 @@
 import React from 'react';
 
-import NotifyPage from './pages/NotifyPage';
+
+import Routes from './routes';
+import Global from './styles/global';
 
 
 function App() {
   return (
-    <div className="App">
-      <NotifyPage />
-    </div>
+    <>
+      <Routes />
+      <Global />
+    </>
   );
 }
 
