@@ -1,7 +1,7 @@
 import React from "react";
 import { GrApple, GrWindows, GrAndroid } from "react-icons/gr";
 
-import { Container, Content, Nav, Ul } from "./styles";
+import { Container, Content, Nav, List, ListItem } from "./styles";
 import Phone from "../../../assets/image/notify/mao-iphone.png";
 
 function HeroSection() {
@@ -13,23 +13,23 @@ function HeroSection() {
         </h1>
         <p>A great new free psd theme to showcase your new application.</p>
         <Nav>
-          <Ul>
-            <li>
+          <List>
+            <ListItem>
               <a href="#">
                 <GrApple />
               </a>
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
               <a href="#">
                 <GrWindows />
               </a>
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
               <a href="#">
                 <GrAndroid />
               </a>
-            </li>
-          </Ul>
+            </ListItem>
+          </List>
         </Nav>
       </Content>
       <img src={Phone} alt="" />

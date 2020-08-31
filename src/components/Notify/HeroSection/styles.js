@@ -59,7 +59,7 @@ export const Nav = styled.nav`
   }
 `;
 
-export const Ul = styled.ul`
+export const List = styled.ul`
   display: flex;
   padding: 0;
 
@@ -76,3 +76,6 @@ export const Ul = styled.ul`
     }
   }
 `;
+
+
+export const ListItem = styled.li``
