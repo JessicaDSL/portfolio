@@ -1,12 +1,12 @@
 import React from 'react';
 
+import { list } from './content';
 import { Container, Content, List, ListItem } from "./styles";
 
 function AdressSection() {
   return(
     <Container>
-      <Content>
-        <section>
+        <Content>
           <h1>INFORMATION</h1>
           <hr />
           <p>
@@ -18,8 +18,8 @@ function AdressSection() {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-        </section>
-        <section>
+        </Content>
+        <Content>
           <h1>INFORMATION</h1>
           <hr />
           <p>
@@ -31,29 +31,19 @@ function AdressSection() {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-        </section>
-        <section>
+        </Content>
+        <Content>
           <h1>CONTACT</h1>
           <hr />
           <List>
-            <ListItem>
-              <i class="fas fa-map-marker-alt"></i>
-              123, Main Road, Your City, NY 1234
-            </ListItem>
-            <ListItem>
-              <i class="fas fa-phone-alt"></i>
-              +123 456 7890
-            </ListItem>
-            <ListItem>
-              <i class="far fa-clock"></i>7 Days a week from 10:00 am to 6:00 pm
-            </ListItem>
-            <ListItem>
-              <i class="fas fa-envelope"></i>
-              info@psdfreebies.com
-            </ListItem>
+            {list.map((item, index) => (
+              <ListItem key={index}>
+                <b>{item.icon}</b>
+                <p>{item.info}</p>
+              </ListItem>
+            ))}
           </List>
-        </section>
-      </Content>
+        </Content>
     </Container>
   );
 }
