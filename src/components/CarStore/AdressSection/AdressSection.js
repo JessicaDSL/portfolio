@@ -38,8 +38,7 @@ function AdressSection() {
           <List>
             {list.map((item, index) => (
               <ListItem key={index}>
-                <b>{item.icon}</b>
-                <p>{item.info}</p>
+                <p><span>{item.icon}</span>{item.info}</p>
               </ListItem>
             ))}
           </List>
