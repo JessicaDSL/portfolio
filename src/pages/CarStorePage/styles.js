@@ -9,12 +9,15 @@ export const Container = styled.div`
     box-sizing: border-box;
   }
 
-  hr {
+  
+`;
+
+export const Hr = styled.hr`
     max-width: 1250px;
     height: 2px;
     color: #585858;
     background-color: #585858;
     margin: 0 auto;
     border: 0;
-  }
-`;
+`
+
