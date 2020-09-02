@@ -14,6 +14,10 @@ export const Container = styled.div`
   background-image: url(${Offer});
   font-family: Lato;
   
+  hr {
+    opacity: 0.5;
+  }
+  
   p {
     padding: 10px 0 20px 0;
   }
@@ -46,7 +50,5 @@ export const Content = styled.div`
   width: 1200px;
   justify-content: space-around;
 
-  hr {
-    opacity: 0.5;
-  }
+  
 `;
