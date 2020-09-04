@@ -1,16 +1,9 @@
 import React from "react";
 
-import {
-  Container,
-  Content,
-  List,
-  ListItem,
-  Form,
-  Input
-} from "./styles";
+import { Container, Content, List, ListItem, Form, Input } from "./styles";
 
 import { links } from "./content";
-import QuickLinks from '../QuickLinks';
+import QuickLinks from "../QuickLinks";
 
 const SubscribeSection = () => {
   return (
@@ -30,11 +23,11 @@ const SubscribeSection = () => {
           <Input type="email" placeholder="" id="news" required />
           <button>submit</button>
           <List>
-          {links.map((item, index) => (
-            <ListItem key={index}>
-              <a href={item.url}>{item.icon}</a>
-            </ListItem>
-          ))}
+            {links.map((item, index) => (
+              <ListItem key={index}>
+                <a href={item.url}>{item.icon}</a>
+              </ListItem>
+            ))}
           </List>
         </Form>
       </Content>
