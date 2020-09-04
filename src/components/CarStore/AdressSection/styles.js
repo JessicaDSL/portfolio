@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import media from 'styled-media-query';
+import media from "styled-media-query";
 
 export const Container = styled.div`
   min-height: 400px;
@@ -7,9 +7,9 @@ export const Container = styled.div`
   justify-content: space-around;
   align-items: center;
   font-family: Lato;
-    font-size: medium;
-    color: #887979;
-  
+  font-size: medium;
+  color: #887979;
+
   hr {
     color: #9c1c28;
     background-color: #9c1c28;
@@ -17,14 +17,13 @@ export const Container = styled.div`
     height: 6px;
     margin: 10px 0 36px 0;
     border: 0;
-    margin: 15px 10px;
   }
+
   h1 {
     font-family: Lato;
     font-size: 25px;
     margin: 85px 0 0 0;
     color: #ffffff;
-    margin: 5px 0px;
   }
 
   p {
@@ -34,11 +33,13 @@ export const Container = styled.div`
     max-width: 370px;
     margin: 18px 0;
   }
+
   svg {
     font-size: smaller;
     color: #9c1c28;
     margin: 0 5px;
   }
+
   ${media.lessThan("900px")`
     flex-direction: column;
     justify-content: center;
@@ -51,7 +52,8 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 385px;
-  hr{
+
+  hr {
     margin: 5px 0 36px 0;
   }
 `;
@@ -61,5 +63,4 @@ export const List = styled.ul`
   flex-direction: column;
 `;
 
-export const ListItem = styled.li`
-`;
+export const ListItem = styled.li``;
