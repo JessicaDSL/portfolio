@@ -6,6 +6,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #282828;
+
   hr {
     height: 6px;
     color: #9c1c28;
@@ -25,12 +26,14 @@ export const Container = styled.div`
     margin: 80px 0 20px 0;
     color: #ffffff;
   }
+
   div {
     margin: 20px 0;
   }
 `;
 
 export const Content = styled.div`
+
   p {
     color: #ff3448;
     font-size: small;
@@ -38,11 +41,13 @@ export const Content = styled.div`
     text-transform: uppercase;
     font-family: Lato;
   }
+
   b {
     font-family: Lato;
     font-size: large;
     text-align: center;
     color: #ffffff;
+    
     svg {
       font-size: small;
       color: #d73444;
@@ -67,6 +72,7 @@ export const ListItem = styled.li`
   img {
     padding: 40px 0;
   }
+
   ${media.lessThan("1300px")`
   flex-direction: column;
   padding: 20px;

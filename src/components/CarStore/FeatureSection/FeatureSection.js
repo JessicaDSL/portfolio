@@ -10,12 +10,13 @@ const FeatureSection = () => {
         <h1>Featured Products</h1>
         <hr />
       </div>
+
       <div></div>
+
       <Content>
         <List>
           {list.map((item, index) => (
             <ListItem key={index}>
-              
               <img src={item.image} alt="car" />
               <p>{item.title}</p>
               <b>{item.price}</b>
