@@ -12,6 +12,7 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  
   a {
     color: #ffffff;
     margin: 0 0 0 40px;

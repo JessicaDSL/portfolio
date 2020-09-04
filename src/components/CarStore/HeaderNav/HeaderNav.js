@@ -1,19 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import { links } from './content';
-import { List, ListItem, Nav } from './styles';
+import { links } from "./content";
+import { List, ListItem, Nav } from "./styles";
 
 function HeaderNav() {
-  return(
+  return (
     <Nav>
-        <List>
-          {links.map((item, index) => (
-            <ListItem key={index}>
-              <a href={item.url}>{item.label}</a>
-            </ListItem>
-          ))}
-        </List>
-      </Nav>
+      <List>
+        {links.map((item, index) => (
+          <ListItem key={index}>
+            <a href={item.url}>{item.label}</a>
+          </ListItem>
+        ))}
+      </List>
+    </Nav>
   );
 }
 
