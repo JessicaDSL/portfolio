@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   min-height: 810px;
@@ -6,46 +6,43 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-   height: 100%;
-   width: 100%;
-   p {
+  height: 100%;
+  width: 100%;
+
+  p {
     font-family: Lato;
     color: #979696;
     display: flex;
     flex-wrap: nowrap;
   }
+
   h1 {
     font-family: Lato;
     color: #ffffff;
     text-transform: uppercase;
     font-size: xx-large;
+    margin:150px 0 0 0;
   }
 `;
 
-export const LightGrayContentA = styled.div`
+export const LightGrayContent = styled.div`
+  display: flex;
   background: #303030;
-  width: 50%; 
-   height: 405px; 
-   float: left;
+  width: 50%;
+  height: 405px;
+  float: left;
+  
+  img {
+    width: 400px;
+    height: 300px;
+    margin: 50px 0 0 30px;
+  }
 `;
 
-export const DarkGrayContentA = styled.div`
+export const DarkGrayContent = styled.div`
+  display: flex;
   background: #1c1c1c;
-  width: 50%; 
-  height: 405px; 
-   float: left;
-`;
-
-export const DarkGrayContentB = styled.div`
-  background: #1c1c1c;
-  width: 50%; 
-  height: 405px; 
-   float: left;
-`;
-
-export const LightGrayContentB = styled.div`
-  background: #303030;
-  width: 50%; 
-  height: 405px; 
-   float: left;
+  width: 50%;
+  height: 405px;
+  float: left;
 `;

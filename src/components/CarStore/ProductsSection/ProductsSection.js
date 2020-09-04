@@ -1,41 +1,49 @@
-import React from 'react';
+import React from "react";
 
-import { Container, Content, LightGrayContentA, DarkGrayContentA, DarkGrayContentB, LightGrayContentB} from './styles';
+import Bank from "../../../assets/image/carstore/products/bank.png";
+import Headlight from "../../../assets/image/carstore/products/farol.png";
+import Rim from "../../../assets/image/carstore/products/Rim.png";
+import Wheel from "../../../assets/image/carstore/products/wheel.png";
+import { Container, Content, LightGrayContent, DarkGrayContent  } from "./styles";
 
 const ProductsSection = () => {
-  return(
+  return (
     <Container>
       <Content>
-        <LightGrayContentA>
+        <LightGrayContent>
           <div>
-          <h1>Headlights</h1>
-          <p>Headlights Projector, LED, Factory</p>
+            <h1>Headlights</h1>
+            <p>Headlights Projector, LED, Factory</p>
           </div>
-        </LightGrayContentA>
+          <img src={Headlight} alt="" />
+        </LightGrayContent>
 
-        <DarkGrayContentA>
+        <DarkGrayContent>
           <div>
-          <h1>Headlights</h1>
-          <p>Headlights Projector, LED, Factory</p>
+            <h1>Headlights</h1>
+            <p>Headlights Projector, LED, Factory</p>
           </div>
-        </DarkGrayContentA>
-      
-        <DarkGrayContentB>
-          <div>
-          <h1>Headlights</h1>
-          <p>Headlights Projector, LED, Factory</p>
-          </div>
-        </DarkGrayContentB>
+          <img src={Wheel} alt="" />
+        </DarkGrayContent>
 
-        <LightGrayContentB>
+        <DarkGrayContent>
           <div>
-          <h1>Headlights</h1>
-          <p>Headlights Projector, LED, Factory</p>
+            <h1>Headlights</h1>
+            <p>Headlights Projector, LED, Factory</p>
           </div>
-        </LightGrayContentB>
+          <img src={Rim} alt="" />
+        </DarkGrayContent>
+
+        <LightGrayContent>
+          <div>
+            <h1>Headlights</h1>
+            <p>Headlights Projector, LED, Factory</p>
+          </div>
+          <img src={Bank} alt="" />
+        </LightGrayContent>
       </Content>
     </Container>
   );
-}
+};
 
 export default ProductsSection;
