@@ -8,20 +8,22 @@ export const Container = styled.div`
   align-items: center;
   color: #ffffff;
   font-family: Lato;
-  p{
+
+  p {
     font-weight: lighter;
     color: #887979;
     font-size: smaller;
   }
-  h5{
+
+  h5 {
     font-size: 15px;
   }
-  
 `;
 
 export const Content = styled.div`
   display: flex;
   width: 980px;
+
   ${media.lessThan("550px")`
     flex-direction: column;
   `}
