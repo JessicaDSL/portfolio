@@ -12,44 +12,28 @@ export const Container = styled.div`
   flex-direction: column;
   min-height: 872px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  hr {
-    max-width: 1250px;
-    height: 2px;
-    color: #585858;
-    background-color: #585858;
-    margin: 0 auto;
-    border: 0;
+
+  div {
+    background-color: #212121;
+    justify-items: center;
   }
 `;
 
 export const Content = styled.div`
-  min-height: 50px;
+  height: 100px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   background-color: #212121;
-  div {
-    flex-direction: row;
-  }
+  justify-content: center;
+  align-items: center;
+
   a {
     padding: 0 30px 0 0;
-  }
-  span {
-    svg {
-      color: #ffffff;
-      width: 15px;
-      height: 15px;
-      border-left: 1px solid #595959;
-    }
   }
 `;
 
 export const List = styled.ul`
   display: flex;
   width: 320px;
-  
 `;
 
 export const ListItem = styled.li`
@@ -57,4 +41,11 @@ export const ListItem = styled.li`
   flex-direction: column;
 `;
 
-export const Hr = styled.hr``;
+export const Line = styled.hr`
+  width: 100%;
+  height: 2px;
+  background: #595959;
+  justify-items: center;
+  border: 0;
+  margin: 0 auto;
+`;
