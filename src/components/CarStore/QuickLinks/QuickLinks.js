@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Container, List, ListItem } from './styles';
 import { list } from './content';
+import { Container, List, ListItem } from './styles';
 
 const QuickLinks = () => {
   return(
@@ -11,7 +11,7 @@ const QuickLinks = () => {
         <List>
           {list.map((item, index) => (
             <ListItem key={index}>
-              <a href={item.url}>{item.text}</a>
+              <a href={item.url}><p>{item.text}</p></a>
             </ListItem>
           ))}
         </List>
