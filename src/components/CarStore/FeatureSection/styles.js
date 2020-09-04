@@ -25,6 +25,9 @@ export const Container = styled.div`
     margin: 80px 0 20px 0;
     color: #ffffff;
   }
+  div {
+    margin: 20px 0;
+  }
 `;
 
 export const Content = styled.div`
@@ -46,23 +49,28 @@ export const Content = styled.div`
       letter-spacing: 0px;
     }
   }
+  
 `;
 
 export const List = styled.ul`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 `;
 
 export const ListItem = styled.li`
-  margin: 0 20px 0 0;
   background-color: #363636;
   height: 300px;
   display: flex;
   flex-direction: column;
+  
+  img {
+    padding: 40px 0;
+  }
   ${media.lessThan("1300px")`
   flex-direction: column;
   padding: 20px;
   margin: 20px 0;
+  
   `}
 `;
