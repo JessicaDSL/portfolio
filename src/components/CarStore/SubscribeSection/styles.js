@@ -1,18 +1,19 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-min-height: 450px;
+  min-height: 450px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-family: Lato;
-  
+
   h1 {
     text-transform: uppercase;
     font-size: 25px;
     color: #ffffff;
     margin: 30px 0 0 0;
   }
+
   hr {
     color: #9c1c28;
     background-color: #9c1c28;
@@ -21,35 +22,34 @@ min-height: 450px;
     margin: 10px 0;
     border: 0;
   }
-  
 `;
 
 export const Content = styled.div`
   color: #ff3448;
   font-size: 15px;
+
   svg {
-    color: #ffffff; 
+    color: #ffffff;
     width: 30px;
     height: 15px;
   }
-  a{
+  
+  a {
     margin: 10px;
     padding: 20px 0;
   }
 `;
 
-export const ListItem = styled.li`
-  
-  `;
+export const ListItem = styled.li``;
 
 export const List = styled.ul`
-display: flex;
+  display: flex;
 `;
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  
+
   label {
     color: #887979;
     font-size: small;
@@ -57,7 +57,7 @@ export const Form = styled.form`
     padding: 20px 0;
     max-width: 345px;
   }
-  
+
   button {
     height: 38px;
     width: 142px;
@@ -73,7 +73,6 @@ export const Form = styled.form`
     margin: 10px 0 130px 0;
   }
 `;
-
 
 export const Input = styled.input`
   background: #282828;
