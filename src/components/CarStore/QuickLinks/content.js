@@ -1,6 +1,3 @@
-import './styles';
-
-
 export const list = [
   {
     text: "About Us", url: '#'
