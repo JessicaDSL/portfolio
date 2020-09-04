@@ -1,21 +1,21 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter  } from 'react-icons/fa'
+import { FaFacebookF, FaTwitter, FaGooglePlusG, FaInstagram, FaPinterest  } from 'react-icons/fa'
 
 
 export const links = [
   {
-    info: <FaFacebookF />, url: '#'
+    icon: <FaFacebookF />, url: '#'
   },
   {
-    info: <FaTwitter />, url: '#'
+    icon: <FaTwitter />, url: '#'
   },
   {
-    info: <FaFacebookF />, url: '#'
+    icon: <FaGooglePlusG />, url: '#'
   },
   {
-    info: <FaFacebookF />, url: '#'
+    icon: <FaInstagram />, url: '#'
   },
   {
-    info: <FaFacebookF />, url: '#'
+    icon: <FaPinterest />, url: '#'
   },
 ]
