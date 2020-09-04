@@ -32,7 +32,7 @@ const SubscribeSection = () => {
           <List>
           {links.map((item, index) => (
             <ListItem key={index}>
-              <a href={item.url}>{item.label}</a>
+              <a href={item.url}>{item.icon}</a>
             </ListItem>
           ))}
           </List>
