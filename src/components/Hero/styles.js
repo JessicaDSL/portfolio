@@ -110,7 +110,7 @@ export const List = styled.ul`
 export const StyledBurguer = styled.div`
   width: 2rem;
   height: 2rem;
-  position: fixed;
+  position: relative;
   top: 15px;
   right: 20px;
   z-index: 20;
@@ -121,8 +121,6 @@ export const StyledBurguer = styled.div`
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
-  top: 8px;
-  right: 11px;
   `}
   ${media.between("326px","769px")`
   display: flex;
