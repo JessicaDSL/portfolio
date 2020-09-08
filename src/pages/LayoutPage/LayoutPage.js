@@ -6,7 +6,7 @@ import Hero from "../../components/Hero";
 const LayoutPage = () => {
   return (
     <div>
-      <Hero />
+      
       <h1>
         Layout
       </h1>
