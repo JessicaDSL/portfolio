@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from 'styled-media-query';
 
 export const Container = styled.div`
   font-family: Lato;
@@ -12,11 +13,21 @@ export const Container = styled.div`
     border-color: rgb(90, 89, 89);
     border-image: initial;
     height: 3px;
-    margin: 0.5% 10%;
+    margin: 1% 8%;
   }
   h2 {
-    margin: 0 10%;
+    font-size: 2.3rem;
+    margin: 0 8%;
+
+    span {
+      font-size: 1.8rem;
+    }
   }
+  ${media.lessThan('large')`
+    hr, h2{
+      margin: 0;
+    }
+  `}
 `;
 
 export const List = styled.ul`
@@ -24,6 +35,11 @@ export const List = styled.ul`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 30px 0;
+  ${media.lessThan('medium')`
+  margin: 20px 0 0 0;
+    width: 100%;
+  `}
 `;
 
 export const ListItem = styled.li`
@@ -36,4 +52,7 @@ export const ListItem = styled.li`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  ${media.lessThan('medium')`
+    width: 100%;
+  `}
 `;
