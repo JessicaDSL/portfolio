@@ -1,26 +1,28 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import media from 'styled-media-query';
+
 
 export const Container = styled.div`
   font-family: Lato;
   width: 100%;
-  
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Section = styled.section`
-min-height: 470px;
-display: flex;
-justify-content: center;
-align-items: center;
-img {
-    justify-content: flex-end;
-  margin: 0 50px 0 0;
-}
-p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 540px;
+
+  p {
     font-size: 16px;
     padding: 20px 0 0 0;
     color: rgb(128, 128, 128);
-    width: 40%;
+    max-width: 500px;
   }
+
   button {
     background-color: rgb(218, 16, 128);
     color: #ffffff;
@@ -29,9 +31,27 @@ p {
     padding: 16px 56px;
     border-radius: 5px;
     font-size: 16px;
-    margin: 20px 0 0 0;
+    margin: 20px 0;
   }
 `;
+
+
+export const Main = styled.main`
+  width: 80%;
+  display: flex;
+  
+  img{
+    height: 400px;
+    margin: 0 50px 0 0;
+    position: relative;
+    top: 50px;
+    ${media.lessThan('1026px')`
+      display: none;
+    `}
+  }
+`;
+
+
 
 export const Content = styled.div`
   height: 205px;
@@ -48,5 +68,9 @@ export const Content = styled.div`
     display: flex;
     font-size: 16px;
     font-family: Lato;
+    ${media.lessThan('medium')`
+      margin: 0 10px;
+    `}
   }
 `;
+

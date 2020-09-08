@@ -1,12 +1,13 @@
 import React from "react";
 
 import Child from "../../../assets/image/auti/child.png";
-import { Container, Content, Section } from "./styles";
+import { Container, Content, Section, Main } from "./styles";
 
 const SubscribeSection = () => {
   return (
     <Container>
       <Section>
+      <Main>
         <img src={Child} alt="dog" />
         <div>
           <p>
@@ -18,6 +19,7 @@ const SubscribeSection = () => {
             sed libero risus.
           </p>
           <p>
+          
             Curabitur vel ligula mollis, laoreet enim eu, pretium ipsum. Proin
             sodales lectus id erat aliquet sodales. Cras pellentesque justo eget
             lectus convallis feugiat et at neque. Nulla volutpat lacus eget
@@ -28,8 +30,9 @@ const SubscribeSection = () => {
             vel aliquam sem mattis. Orci varius natoque penatibus et magnis dis
             parturient montes, nascetur ridiculus mus.
           </p>
-          <button>ASSINE E AJUDE</button>
-        </div>
+          <button>SIGN AND HELP!</button>
+          </div>
+      </Main>
       </Section>
       <Content>
         <p>
@@ -40,8 +43,7 @@ const SubscribeSection = () => {
           Lectus ligula fermentum nisi, sit amet blandit lacus nisi eu erat.
           Duis commodo eget enim nec bibendum. Duis diam neque, tempus quis sem
           id, faucibus ultricies lectus. Integer ac pharetra diam. Aenean arcu
-          ligula, ultrices sit amet accumsan non, luctus in libero. Integer at
-          purus vitae odio dapibus pulvinar. Orci varius.
+          ligula, ultrices sit amet accumsan non, luctus  .
         </p>
       </Content>
     </Container>
