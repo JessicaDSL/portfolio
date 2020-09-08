@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import media from 'styled-media-query';
+import media from "styled-media-query";
 
 export const Container = styled.div`
   display: flex;
@@ -21,9 +21,10 @@ export const Container = styled.div`
       margin: 30px 30px 0 0;
     }
   }
-  ${media.lessThan('medium')`
+  ${media.lessThan("medium")`
   div{
-    width: 90%;
+    width: 100%;
+    margin: 0;
     img{
       height: 80px;
       width: 100px;
