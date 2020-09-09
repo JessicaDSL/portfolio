@@ -4,83 +4,45 @@ import media from "styled-media-query";
 export const Nav = styled.nav`
   width: 100%;
   height: 55px;
-  background: rgba(0, 0, 0, 0.7);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  background: #080806;
+  color: #FCFBE3;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  h1 {
-    margin: 0 0 0 8px;
-    color: #f5f5f5;
-    font-family: Lato;
-  }
-  ${media.lessThan("321px")`
-    height: 45px;
-    h1 {
-      margin: 0 0 0 4px;
-    }
-  `}
-
-  ${media.lessThan("1024px")`
-  background: #111111;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-  `};
+  font-family: Lato;
 `;
 
 export const Logo = styled.div`
   display: flex;
   align-items: center;
-  margin: 0 0 0 20px;
-  img {
-    width: 55px;
-    height: 45px;
+  margin: 0 0 0 3.5%;
+  h1 {
+    margin: 0 0 0 10px; 
   }
-  ${media.lessThan("769px")`
-  margin: 0 0 0 10px;
   img {
-    height: 35px;
     width: 45px;
-  }
-  `}
-  ${media.between("769px","1024px" )`
-  img {
     height: 35px;
-    width: 45px;
   }
-  `};
-  ${media.between("1024px","2000px" )`
-  img {
-    height: 40px;
-    width: 50px;
-  }
-  `}
-  ${media.greaterThan("2000px")`
-  img {
-    height: 45px;
-    width: 55px;
-  }
-  `}
-
-  
+    
 `;
 
 export const List = styled.ul`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: white;
   z-index: 2;
+  padding: 0;
   h1 {
     font-size: 14px;
-    padding: 16px 12px;
+    padding: 16px 26px;
     letter-spacing: 2px;
-    background: none;
     border: 0;
-    color: #f5f5f5;
-    transition: 0.2s all ease-in;
-    font-family: Lato;
+    color: #FCFBE3;
+    transition: 0.25s all ease-in;
+    
     &:hover {
       border-bottom: 6px solid #de3163;
+      background: rgba(255,255,255, 0.1);
       color: #de3163;
     }
   }
@@ -110,19 +72,17 @@ export const List = styled.ul`
 export const StyledBurguer = styled.div`
   width: 2rem;
   height: 2rem;
-  position: fixed;
   top: 15px;
   right: 20px;
   z-index: 20;
   display: none;
-
+  
 
   ${media.lessThan("326px")`
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
-  top: 8px;
-  right: 11px;
+
   `}
   ${media.between("326px","769px")`
   display: flex;
@@ -137,7 +97,7 @@ export const StyledBurguer = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => (open ? "#db7093" : "#f1f1f1")};
+    background-color: ${({ open }) => (open ? "#FBD4CC" : "#f1f1f1")};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
