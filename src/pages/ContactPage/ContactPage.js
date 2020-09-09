@@ -5,17 +5,15 @@ import React from "react";
 
 //import Photo from "../../assets/image/foto-contact-dois.png";
 //import Map from "../../assets/image/map.png";
-import { Container, Content } from "./styles";
+import { Container } from "./styles";
 import Hero from "../../components/Hero";
+import Contact from '../../components/Contact';
 
 
 const ContactPage = () => {
   return (
     <Container>
-      <Hero />
-      <Content>
-        <h1>Contact</h1>
-      </Content>
+      <Contact />
     </Container>
   );
 };
