@@ -4,6 +4,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import LayoutPage from "./pages/LayoutPage";
 import ContactPage from "./pages/ContactPage";
+import CarStorePage from "./pages/CarStorePage";
 
 export default function Routes() {
   return (
@@ -12,6 +13,7 @@ export default function Routes() {
         <Route path="/" exact component={HomePage} />
         <Route path="/contact-page" component={ContactPage} />
         <Route path="/layout-page" component={LayoutPage} />
+        <Route path="/carstore" component={CarStorePage} />
       </Route>
     </BrowserRouter>
   );
