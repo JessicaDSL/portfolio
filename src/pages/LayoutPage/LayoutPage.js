@@ -1,17 +1,16 @@
 import React from "react";
-
+import { render } from "react-dom";
+import Portfolio from "../../components/Layout/Portfolio";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import { Container } from './styles';
-import Hero from "../../components/Hero";
 
 const LayoutPage = () => {
   return (
     <div>
-      <Hero />
-      <h1>
-        Layout
-      </h1>
+      <Portfolio />
     </div>
   );
 };
+
 
 export default LayoutPage;
