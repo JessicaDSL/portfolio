@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+import { FaCode } from 'react-icons/fa';
 import { StyledBurguer, List, Nav, Logo } from "./styles";
 
-import Icone from "../../assets/image/icone-5.png";
+
 
 const Burguer = () => {
   const [open, setOpen] = useState(false);
@@ -29,12 +30,12 @@ const RightNav = ({ open }) => {
         </Link>
       </li>
       <li>
-        <Link to={`/layout-page`}>
+        <Link to={`/layout`}>
           <h1>LAYOUTS</h1>
         </Link>
       </li>
       <li>
-        <Link to={`/contact-page`}>
+        <Link to={`/contact`}>
           <h1>CONTACT</h1>
         </Link>
       </li>
@@ -46,8 +47,7 @@ const Hero = () => {
   return (
     <Nav>
       <Logo>
-        <img src={Icone} alt="logo" />
-        <h1>Jessy</h1>
+        <h1><span><FaCode /></span>Jessy</h1>
       </Logo>
       <Burguer />
     </Nav>

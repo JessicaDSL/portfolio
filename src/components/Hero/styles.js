@@ -10,6 +10,10 @@ export const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   font-family: Lato;
+  span {
+    color: #de3163;
+    margin: 0 10px 0 0;
+  }
 `;
 
 export const Logo = styled.div`
@@ -17,7 +21,7 @@ export const Logo = styled.div`
   align-items: center;
   margin: 0 0 0 3.5%;
   h1 {
-    margin: 0 0 0 10px; 
+    margin: 0 0 5px 10px; 
   }
   img {
     width: 45px;
