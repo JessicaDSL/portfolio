@@ -1,23 +1,27 @@
-import React from 'react';
+import React from "react";
 
-import { FaEnvelope, FaLinkedinIn, FaInstagram, FaGithub } from 'react-icons/fa';
-
+import {
+  FaEnvelope,
+  FaLinkedinIn,
+  FaInstagram,
+  FaGithub,
+} from "react-icons/fa";
 
 export const list = [
   {
     icon: <FaEnvelope />,
-    url: '#',
+    url: "mailto:jessikurt@google.com",
   },
   {
     icon: <FaLinkedinIn />,
-    url: '#',
+    url: "https://www.linkedin.com/in/jessicadsl",
   },
   {
     icon: <FaInstagram />,
-    url: '#',
+    url: "https://www.instagram.com/jess_yk/",
   },
   {
     icon: <FaGithub />,
-    url: '#',
+    url: "https://www.github.com/jessicaDSL",
   },
-]
+];
