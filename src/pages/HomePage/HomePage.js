@@ -6,7 +6,6 @@ import Hero from "../../components/Hero";
 const HomePage = () => {
   return (
     <Container>
-      <Hero />
       <Content>
       <div>
         <h3>HELLO WORLD,</h3>
