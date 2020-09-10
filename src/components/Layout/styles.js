@@ -36,17 +36,10 @@ export const Main = styled.main`
   font-family: Lato;
   margin: 60px 0 0 0;
 
-  a {
-    color: #fcfbe3;
-    font-size: 1.3rem;
-    background: #080806;
-    padding: 10px 25px;
-    border-radius: 10px;
-    transition: 0.2s all ease-out;
+  img {
+    
     &:hover {
-      color: #de3163;
-      background: rgba(0, 0, 0, 0.9);
-      border: 2px solid #de3163;
+      border:  4px solid #de3163;
     }
   }
 
@@ -76,7 +69,7 @@ export const Section = styled.section`
   ${media.lessThan("medium")`
     flex-direction: column;
     img{ 
-      margin: 30px 0;
+      margin: 0px 0;
       width: 200px;
     }
     a{

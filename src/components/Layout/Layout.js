@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { Container, Main, Section, View, Mask } from "./styles";
 import Notify from "../../assets/image/layout/notify.png";
@@ -16,13 +17,19 @@ const Layout = () => {
 
         <Section>
           <div>
-            <img src={Notify} alt="" />
+            <Link to="/notify">
+              <img src={Notify} alt="" />
+            </Link>
           </div>
           <div>
-            <img src={CarStore} alt="" />
+            <Link to="/carstore">
+              <img src={CarStore} alt="" />
+            </Link>
           </div>
           <div>
-            <img src={Donaty} alt="" />
+            <Link to="/auti">
+              <img src={Donaty} alt="" />
+            </Link>
           </div>
         </Section>
       </Main>

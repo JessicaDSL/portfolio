@@ -4,9 +4,9 @@ import media from "styled-media-query";
 import Desktop from "../../assets/image/back-home-1.png";
 
 export const Container = styled.div`
-height: 100vh;
+  height: 100vh;
   background-image: url(${Desktop});
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
@@ -14,7 +14,7 @@ height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #FCFBE3;
+  color: #fcfbe3;
   ${media.lessThan("large")`
     background-size: cover;
   `}
@@ -71,7 +71,7 @@ export const Content = styled.div`
       margin: 0 10px;
     }
   `}
-  ${media.between("600px","790px")`
+  ${media.between("600px", "790px")`
   position: relative;
     bottom: 10%;
   h1 {
@@ -86,7 +86,7 @@ export const Content = styled.div`
       font-size: 1rem;
     }
   `}
-  ${media.between("790px","1800px")`
+  ${media.between("790px", "1800px")`
   position: relative;
     bottom: 10%;
   h1 {
