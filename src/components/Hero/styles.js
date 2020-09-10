@@ -76,6 +76,7 @@ export const List = styled.ul`
 export const StyledBurguer = styled.div`
   width: 2rem;
   height: 2rem;
+  position: relative;
   top: 15px;
   right: 20px;
   z-index: 20;
