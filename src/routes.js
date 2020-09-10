@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import LayoutPage from "./pages/LayoutPage";
 import ContactPage from "./pages/ContactPage";
 import AutiPage from './pages/AutiPage';
+import CarStorePage from "./pages/CarStorePage";
 
 export default function Routes() {
   return (
@@ -13,6 +14,9 @@ export default function Routes() {
         <Route path="/contact-page" component={ContactPage} />
         <Route path="/layout-page" component={LayoutPage} />
         <Route path="/auti" component={AutiPage} />
-      </>
+        <Route path="/carstore" component={CarStorePage} />
+    </>
+      </Route>
+    </BrowserRouter>
   );
 }
