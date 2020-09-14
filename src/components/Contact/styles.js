@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from 'styled-media-query';
 
 export const Container = styled.div`
   margin: 0 0 15% 0;
@@ -59,6 +60,10 @@ export const Aside = styled.aside`
   }
   h3 {
   }
+  
+  ${media.lessThan("1060px")`
+    display: none;
+  `}
 `;
 
 export const Links = styled.div`
