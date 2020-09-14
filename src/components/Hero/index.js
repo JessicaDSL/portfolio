@@ -30,8 +30,8 @@ const RightNav = ({ open }) => {
         </Link>
       </li>
       <li>
-        <Link to={`/layout`}>
-          <h1>LAYOUTS</h1>
+        <Link to={`/layouts`}>
+          <h1>PORTFOLIO</h1>
         </Link>
       </li>
       <li>
