@@ -1,22 +1,31 @@
-import React from 'react';
+import React from "react";
 
-import { Container, Content } from './styles';
+import { Container, Content } from "./styles";
+import Background from "../../assets/image/home/bg01.png";
 
 const Home = () => {
   return (
-    <Container>
+    <Container id="home">
       <Content>
-        <h3>HELLO WORLD,</h3>
-        <small> I'm</small>
-        <h1>Jéssica Lima</h1>
-        <p>
-          I’m a web developer, and I was born in Brazil, Rio de Janeiro,
-          currently live in Portugal.
-        </p>
-        <p>
-          I am passionate about technology and making dreams come true through
-          the logic of programming.
-        </p>
+        <div>
+          <h1>JÉSSICA LIMA</h1>
+          <h3>Frontend Developer</h3>
+          <p>
+            Hello World, I'm a web developer, and i was born in Brazil, Rio de
+            Janeiro. Currently live in Portugal. I am passionate about
+            technology, games, creativity, and making dreams come true through
+            the logic of programing.
+          </p>
+          <p>
+            I am currently focused on website development and maintenance. Using
+            HTML5, CSS3, Flexbox, Grid, Javascript, ReactJS and StyledComponents
+            technologies
+          </p>
+          <p>:)</p>
+        </div>
+        <div>
+          <img src={Background} alt="" />
+        </div>
       </Content>
     </Container>
   );
