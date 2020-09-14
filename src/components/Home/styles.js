@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import media from "styled-media-query";
+
 
 export const Container = styled.div`
   min-height: 600px;
@@ -19,10 +21,16 @@ export const Container = styled.div`
   img {
     width: 100%;
     height: auto;
+    ${media.lessThan("1080px")`
+      margin: 15% 0;
+    `}
   }
 `;
 
 export const Content = styled.div`
 display: flex;
 width: 85%;
+${media.lessThan("1080px")`
+      flex-direction: column;
+    `}
 `;
