@@ -1,106 +1,94 @@
 import styled from "styled-components";
-import media from 'styled-media-query';
-
 
 export const Container = styled.div`
+  margin: 0 0 15% 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  color: #707070;
+  font-family: FiraCodeRetina;
   h1 {
-    font-family: Gadugi;
-    font-size: 3rem;
-    margin: 1rem 0 0 0;
+    font-family: FiraCode;
   }
-  hr {
+  h3 {
+    font-family: FiraCodeRetina;
     color: #de3163;
-    background-color: #de3163;
-    width: 220px;
-    height: 6px;
-    margin: 0px 0px 0px 0px;
-    border-radius: 10px;
-    border: 0;
+    text-align: right;
+    margin: 0 20%;
+  }
+  svg {
+    font-size: 2.8rem;
+    margin: 0 3.5% 0 0;
+    cursor: pointer;
+  }
+`;
+
+export const Content = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15% 0;
+  width: 100%;
+`;
+
+export const LineA = styled.div`
+  width: 20%;
+  height: 1.2px;
+  background: #707070;
+`;
+
+export const LineB = styled.div`
+  width: 50%;
+  height: 1.2px;
+  background: #707070;
+`;
+
+export const Section = styled.section`
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  img {
+    width: 50%;
+  }
+`;
+
+export const Aside = styled.aside`
+  img {
+    margin: 5% 0 5% 20%;
+  }
+  h3 {
+  }
+`;
+
+export const Links = styled.div`
+  display: flex;
+  margin: 10% 0;
+  align-content: space-between;
+  img {
+    width: 30%;
+    margin: 0 5% 0 0;
+  }
+  p {
+    margin: 0 0 5% 0;
   }
 `;
 
 export const Main = styled.main`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #fcfbe3;
-  height: 72vh;
-  width: 80vw;
-  border-radius: 10px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
-  font-family: Lato;
-  margin: 60px 0 0 0;
-
-  a {
-    color: #fcfbe3;
-    font-size: 1.3rem;
-    background: #080806;
-    padding: 10px 25px;
-    border-radius: 10px;
-    transition: 0.2s all ease-out;
-    &:hover {
-      color: #de3163;
-      background: rgba(0, 0, 0, 0.9);
-      border: 2px solid #de3163;
-    }
-  }
-
-  p {
-    padding: 7px 0px 8px 30px;
-  }
-  span {
-    svg {
-      width: 25px;
-      height: 25px;
-    }
+  img {
+    width: 28%;
+    height: 200px;
   }
 `;
-
-export const Section = styled.section`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 80vw;
-  ${media.lessThan("medium")`
-    flex-direction: column;
-    img{ 
-      margin: 30px 0;
-      width: 200px;
-    }
-    a{
-      padding: 10px 10px;
-    }
-  `}
-`;
-
-export const Aside = styled.aside`
-  margin: 40px 0 0 0;
-  h3 {
-    font-size: 1rem;
-  }
-  ${media.lessThan("medium")`
-    display: none;
-  `}
-`
-
-export const Links = styled.div`
-  img{ 
-    margin: 35px 0;
-  }
-`
 
 export const List = styled.ul`
   display: flex;
-  justify-content: center;
-  align-self: center;
+  a {
+    color: #707070;
+  }
 `;
 
 export const ListItem = styled.li`
-  margin: 5px;
-  border-radius: 10px;
+  margin: 0 3.5% 0 0;
 `;
-
-

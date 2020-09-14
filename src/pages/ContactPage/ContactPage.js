@@ -6,7 +6,6 @@ import React from "react";
 //import Photo from "../../assets/image/foto-contact-dois.png";
 //import Map from "../../assets/image/map.png";
 import { Container } from "./styles";
-import Hero from "../../components/Hero";
 import Contact from '../../components/Contact';
 
 

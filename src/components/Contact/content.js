@@ -1,7 +1,7 @@
 import React from "react";
 
 import {
-  FaEnvelope,
+  FaFacebook,
   FaLinkedinIn,
   FaInstagram,
   FaGithub,
@@ -9,19 +9,19 @@ import {
 
 export const list = [
   {
-    icon: <FaEnvelope />,
-    url: "mailto:jessikurt@google.com",
-  },
-  {
-    icon: <FaLinkedinIn />,
-    url: "https://www.linkedin.com/in/jessicadsl",
-  },
-  {
     icon: <FaInstagram />,
     url: "https://www.instagram.com/jess_yk/",
   },
   {
     icon: <FaGithub />,
     url: "https://www.github.com/jessicaDSL",
+  },
+  {
+    icon: <FaLinkedinIn />,
+    url: "https://www.linkedin.com/in/jessicadsl",
+  },
+  {
+    icon: <FaFacebook />,
+    url: "https://www.facebook.com/jessicamocoronga/",
   },
 ];
