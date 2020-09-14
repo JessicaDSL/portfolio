@@ -47,6 +47,7 @@ export const Content = styled.div`
     color: white;
     max-width: 400px;
     font-weight: bold;
+    margin: 15px 0;
   }
 `;
 
