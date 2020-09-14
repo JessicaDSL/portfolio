@@ -2,6 +2,9 @@ import { createGlobalStyle } from 'styled-components';
 import media from "styled-media-query";
 
 import Gadugi from '../assets/fonts/gadugi-2.ttf';
+import FiraCodeRetina from '../assets/fonts/fira-code-retina-maisfontes/fira-code-retina.ttf';
+import FiraCode from '../assets/fonts/Fira_Code/FiraCodet.ttf';
+
 
 export default createGlobalStyle`
   *{
@@ -13,7 +16,6 @@ export default createGlobalStyle`
 
  body, html, #root {
    height: 100% 100%;
-   background-color: #FBD4CC;
  }
 
   body {
@@ -38,5 +40,15 @@ export default createGlobalStyle`
   @font-face {
     font-family: Gadugi;
     src: url(${Gadugi});
+  }
+
+  @font-face {
+    font-family: FiraCodeRetina;
+    src: url(${FiraCodeRetina});
+  }
+
+  @font-face {
+    font-family: FiraCode;
+    src: url(${FiraCode});
   }
 `;
