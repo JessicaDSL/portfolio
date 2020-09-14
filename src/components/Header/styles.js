@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
 export const Container = styled.div`
   min-height: 200px;
@@ -8,9 +9,8 @@ export const Container = styled.div`
   align-items: center;
   a {
     color: #707070;
-    padding: 0 30px 0 0;
-    font-size: small;
-    
+    padding: 0 40px 0 0;
+    font-size: normal;
   }
 `;
 
@@ -18,6 +18,9 @@ export const Nav = styled.nav`
   width: 50%;
   display: flex;
   justify-content: flex-end;
+  ${media.lessThan("910px")`
+  width: 93%;
+  `}
 `;
 
 export const List = styled.ul`
@@ -39,6 +42,9 @@ export const LineA = styled.div`
   width: 40%;
   height: 1px;
   background: #707070;
+  ${media.lessThan("910px")`
+  width: 20%;
+  `}
 `;
 
 export const LineB = styled.div`
