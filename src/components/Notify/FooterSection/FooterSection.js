@@ -7,22 +7,22 @@ const FooterSection = () => {
     <Container>
       <List>
         <ListItem>
-          <a href="#">Contact</a>
+          <a href="https://jessicadsl.github.io/portfolio/">Contact</a>
         </ListItem>
         <ListItem>
-          <a href="#">Download</a>
+          <a href="https://jessicadsl.github.io/portfolio/">Download</a>
         </ListItem>
         <ListItem>
-          <a href="#">Press</a>
+          <a href="https://jessicadsl.github.io/portfolio/">Press</a>
         </ListItem>
         <ListItem>
-          <a href="#">Email</a>
+          <a href="https://jessicadsl.github.io/portfolio/">Email</a>
         </ListItem>
         <ListItem>
-          <a href="#">Support</a>
+          <a href="https://jessicadsl.github.io/portfolio/">Support</a>
         </ListItem>
         <ListItem>
-          <a href="#">Privacy Policy</a>
+          <a href="https://jessicadsl.github.io/portfolio/">Privacy Policy</a>
         </ListItem>
       </List>
     </Container>

@@ -15,17 +15,17 @@ function HeroSection() {
         <Nav>
           <List>
             <ListItem>
-              <a href="#">
+              <a href="https://jessicadsl.github.io/portfolio/">
                 <GrApple />
               </a>
             </ListItem>
             <ListItem>
-              <a href="#">
+              <a href="https://jessicadsl.github.io/portfolio/">
                 <GrWindows />
               </a>
             </ListItem>
             <ListItem>
-              <a href="#">
+              <a href="https://jessicadsl.github.io/portfolio/">
                 <GrAndroid />
               </a>
             </ListItem>

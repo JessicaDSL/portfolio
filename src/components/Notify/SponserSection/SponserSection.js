@@ -41,32 +41,32 @@ const SponserSection = () => {
 
       <List>
         <ListItem>
-          <a href="#">
+          <a href="https://jessicadsl.github.io/portfolio/">
             <GrPinterest />
           </a>
         </ListItem>
         <ListItem>
-          <a href="#">
+          <a href="https://jessicadsl.github.io/portfolio/">
             <GrFacebook />
           </a>
         </ListItem>
         <ListItem>
-          <a href="#">
+          <a href="https://jessicadsl.github.io/portfolio/">
             <GrTwitter />
           </a>
         </ListItem>
         <ListItem>
-          <a href="#">
+          <a href="https://jessicadsl.github.io/portfolio/">
             <GrGoogle />
           </a>
         </ListItem>
         <ListItem>
-          <a href="#">
+          <a href="https://jessicadsl.github.io/portfolio/">
             <GrLinkedin />
           </a>
         </ListItem>
         <ListItem>
-          <a href="#">
+          <a href="https://jessicadsl.github.io/portfolio/">
             <GrYoutube />
           </a>
         </ListItem>
