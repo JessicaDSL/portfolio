@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from 'styled-media-query';
 
 export const Container = styled.div`
   min-height: 450px;
@@ -22,6 +23,9 @@ export const Container = styled.div`
     margin: 10px 0;
     border: 0;
   }
+  ${media.lessThan("900px")`
+    flex-direction: column;
+  `}
 `;
 
 export const Content = styled.div`

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from 'styled-media-query';
 import Offer from "../../../assets/image/carstore/carros-fundo.png";
 
 export const Container = styled.div`
@@ -44,11 +45,19 @@ export const Container = styled.div`
     font-family: Lato;
     text-transform: uppercase;
   }
+  ${media.lessThan("970px")`
+    flex-direction: column;
+    hr{
+      display: none;
+    }
+  `}
 `;
 
 export const Content = styled.div`
   width: 1200px;
   justify-content: space-around;
-
+  ${media.lessThan("640px")`
+    margin: 50px 0;
+  `}
   
 `;

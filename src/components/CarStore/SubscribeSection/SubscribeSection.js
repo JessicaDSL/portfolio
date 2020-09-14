@@ -11,7 +11,6 @@ const SubscribeSection = () => {
       <QuickLinks />
       <QuickLinks />
       <QuickLinks />
-
       <Content>
         <h1>Newsletter</h1>
         <hr />

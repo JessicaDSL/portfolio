@@ -30,6 +30,9 @@ export const Container = styled.div`
   div {
     margin: 20px 0;
   }
+  ${media.lessThan("970px")`
+    display: none;
+  `}
 `;
 
 export const Content = styled.div`
@@ -61,6 +64,9 @@ export const List = styled.ul`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  ${media.lessThan("970px")`
+    width: 100%;
+  `}
 `;
 
 export const ListItem = styled.li`
