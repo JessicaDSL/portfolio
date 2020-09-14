@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bc8a5898506f9e806550c12d574f261b",
+    "revision": "590bb5a93e0cce37a72ebd1f70afefc3",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "93df9472dec36ceee0de",
-    "url": "/portfolio/static/js/2.04ae9754.chunk.js"
+    "revision": "843027dc41282576395a",
+    "url": "/portfolio/static/js/2.dbb1515a.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/portfolio/static/js/2.04ae9754.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.dbb1515a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f4da2821357230868492",
-    "url": "/portfolio/static/js/main.161a0c43.chunk.js"
+    "revision": "793ca01a31d8b45bb7b6",
+    "url": "/portfolio/static/js/main.b68130ec.chunk.js"
   },
   {
     "revision": "7a6cc99bd8f08f9fa6ec",
     "url": "/portfolio/static/js/runtime-main.209c2d7e.js"
+  },
+  {
+    "revision": "addbb673ce35a6f0a1e08b2757a93846",
+    "url": "/portfolio/static/media/FiraCodet.addbb673.ttf"
   },
   {
     "revision": "512541d7c3eae96f545a2805bf9e5f3d",
@@ -28,16 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/Rim.a016d4e3.png"
   },
   {
-    "revision": "786fdedfdb248e8cb927e9544371ed0b",
-    "url": "/portfolio/static/media/back-home-1.786fdedf.png"
-  },
-  {
     "revision": "3051cffcb67dfeda22e7185f764e5911",
     "url": "/portfolio/static/media/bank.3051cffc.png"
   },
   {
     "revision": "89d1324dea393c253646cd7a06dbfdbd",
     "url": "/portfolio/static/media/bank.89d1324d.png"
+  },
+  {
+    "revision": "ec9782eeae958f07e75810188a521e2c",
+    "url": "/portfolio/static/media/bg01.ec9782ee.png"
   },
   {
     "revision": "8c2c8f61da3a419b5b71f2e238b474c5",
@@ -48,16 +52,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/carros-fundo.6602f29d.png"
   },
   {
-    "revision": "9bd334fcac90d7a543f846bda3b6ad72",
-    "url": "/portfolio/static/media/carstore.9bd334fc.png"
+    "revision": "0b0e0cc4908db70debd660d69868b0f2",
+    "url": "/portfolio/static/media/carstore.0b0e0cc4.png"
   },
   {
     "revision": "ced491adb6398c16c60ad76e70d9d5ed",
     "url": "/portfolio/static/media/child.ced491ad.png"
   },
   {
-    "revision": "b83ba1c29fb5e04a178117f31912e186",
-    "url": "/portfolio/static/media/donaty.b83ba1c2.png"
+    "revision": "029b81b20d6b78f69ceb1e2e67b90803",
+    "url": "/portfolio/static/media/commingsoon.029b81b2.png"
+  },
+  {
+    "revision": "88d435300b70838bd4de11b19dc883b3",
+    "url": "/portfolio/static/media/donaty.88d43530.png"
   },
   {
     "revision": "5441ecf01cdbd6d9d42a6a6afbe9ad91",
@@ -80,16 +88,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/farol.dac90424.png"
   },
   {
+    "revision": "7588f46bba7994c90ec1c95cf8611b5d",
+    "url": "/portfolio/static/media/fira-code-retina.7588f46b.ttf"
+  },
+  {
     "revision": "4725e9083543a36dd8c4674e219d3024",
     "url": "/portfolio/static/media/five.4725e908.png"
   },
   {
     "revision": "28c6542ad96074721d4aad0fbf4086d7",
     "url": "/portfolio/static/media/fiveteen.28c6542a.png"
-  },
-  {
-    "revision": "6724bedf21fb89233ca424461af06f7f",
-    "url": "/portfolio/static/media/foto-contact-dois.6724bedf.png"
   },
   {
     "revision": "d04a1f3196acab71ff6ce191f0e0f17e",
@@ -132,10 +140,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/mao-iphone.155daa9c.png"
   },
   {
-    "revision": "941d6c0c87921a7305c3a8cb932929a5",
-    "url": "/portfolio/static/media/map.941d6c0c.png"
-  },
-  {
     "revision": "0a510b3fa3badbdfb353df68b38910fe",
     "url": "/portfolio/static/media/nine.0a510b3f.png"
   },
@@ -144,12 +148,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/nineteen.45d6ae43.png"
   },
   {
-    "revision": "44063b78e6db6a4be1a83518373d7431",
-    "url": "/portfolio/static/media/notify.44063b78.png"
+    "revision": "2eb136a8b96e5cb5556fcb4387663c66",
+    "url": "/portfolio/static/media/notify.2eb136a8.png"
   },
   {
     "revision": "d08d0839fb66f9137a13ee6f90cb5973",
     "url": "/portfolio/static/media/one.d08d0839.png"
+  },
+  {
+    "revision": "77df5fca76b918696203f7b024471556",
+    "url": "/portfolio/static/media/photo.77df5fca.png"
+  },
+  {
+    "revision": "b71007c11664b4bae3790b25ee7e6c33",
+    "url": "/portfolio/static/media/portugal.b71007c1.png"
   },
   {
     "revision": "587b4bc541ca6cb7f2f2b21fe9634687",
