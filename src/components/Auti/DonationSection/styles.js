@@ -24,6 +24,7 @@ export const Container = styled.div`
     font-size: 30px;
     color: rgb(121, 120, 120);
     margin: 0 20px;
+    
   }
 
   time {
@@ -38,6 +39,11 @@ export const Container = styled.div`
       flex-direction: column;
     `}
   }
+  ${media.lessThan('medium')`
+      p, time {
+        margin: 5px 0;
+      }
+    `}
 `;
 
 

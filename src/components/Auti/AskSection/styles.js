@@ -36,7 +36,7 @@ export const List = styled.ul`
   justify-content: center;
   align-items: center;
   margin: 30px 0;
-  ${media.lessThan('medium')`
+  ${media.lessThan('1110px')`
   margin: 20px 0 0 0;
     width: 100%;
   `}
@@ -52,7 +52,7 @@ export const ListItem = styled.li`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  ${media.lessThan('medium')`
+  ${media.lessThan('1110px')`
     width: 100%;
   `}
 `;
