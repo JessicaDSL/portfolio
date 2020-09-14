@@ -81,6 +81,7 @@ const Portfolio = () => {
                 </Link>
               </li>
             </List>
+            
             <Aside>
               <Image onClick={handleClick02}>
                 <img src={CarStore} alt="" className="image" />

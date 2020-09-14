@@ -53,46 +53,67 @@ export const Main = styled.main`
 `;
 
 export const Content = styled.div`
-  width: 500px;
+  width: 50%;
   height: 480px;
   flex-direction: column;
   display: flex;
   justify-content: space-between;
   align-content: space-between;
+  ${media.lessThan("1140px")`
+  width: 90%;
+  justify-content: center;
+  align-content: center;
+  `}
 `;
 
 export const Section = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 0 0 50px 0;
+  padding: 40px 0;
   .image {
     display: flex;
   }
-  img {
-  }
-  ${media.lessThan("medium")`
-    
+  
+  ${media.lessThan("1140px")`
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 95%;
+      height: 60%;
+    }
   `}
 `;
 
 export const List = styled.ul`
   margin: 0 0 0 15px;
+  ${media.lessThan("1140px")`
+    margin: 0 0 30px 0;
+  
+  
+  `}
 `;
 
 export const ListItem = styled.li`
   small {
   }
+  ${media.lessThan("560px")`
+  font-size: 1rem;
+background: blue;
+  `}
 `;
 
 export const Aside = styled.aside`
   display: flex;
   margin: 0 0 0 15px;
-`;
+  ${media.between("560px")`
+  margin: 30px 0;
+  `}
+  ${media.lessThan("560px")`
+  font-size: 1rem;
 
-export const Space = styled.div`
-  width: 300px;
-  height: 250px;
+  `}
 `;
 
 export const Image = styled.div`
@@ -142,6 +163,8 @@ overflow: hidden;
     opacity: 1;
     box-shadow: inset 0 0 100px 50px rgba(0,0,0,.5);
   }
+
+  
 `;
 
 
