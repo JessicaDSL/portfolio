@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.5ae4f159.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.5ae4f159.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.733e378a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.733e378a.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
     "static/js/2.dbb1515a.chunk.js": "/portfolio/static/js/2.dbb1515a.chunk.js",
     "static/js/2.dbb1515a.chunk.js.map": "/portfolio/static/js/2.dbb1515a.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.0e53d8777a277c9b1ca6e1a92fc3f86c.js": "/portfolio/precache-manifest.0e53d8777a277c9b1ca6e1a92fc3f86c.js",
+    "precache-manifest.49b0dec33ec15497e2ca1394420b55a5.js": "/portfolio/precache-manifest.49b0dec33ec15497e2ca1394420b55a5.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/js/2.dbb1515a.chunk.js.LICENSE.txt": "/portfolio/static/js/2.dbb1515a.chunk.js.LICENSE.txt",
     "static/media/FiraCodet.ttf": "/portfolio/static/media/FiraCodet.addbb673.ttf",
     "static/media/Rim.png": "/portfolio/static/media/Rim.a016d4e3.png",
     "static/media/bank.png": "/portfolio/static/media/bank.89d1324d.png",
-    "static/media/bg01.png": "/portfolio/static/media/bg01.ec9782ee.png",
+    "static/media/bg01.png": "/portfolio/static/media/bg01.febb4d6d.png",
     "static/media/boxFood.png": "/portfolio/static/media/boxFood.8c2c8f61.png",
     "static/media/carros-fundo.png": "/portfolio/static/media/carros-fundo.6602f29d.png",
     "static/media/carstore.png": "/portfolio/static/media/carstore.0b0e0cc4.png",
@@ -62,6 +62,6 @@
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
     "static/js/2.dbb1515a.chunk.js",
-    "static/js/main.5ae4f159.chunk.js"
+    "static/js/main.733e378a.chunk.js"
   ]
 }
