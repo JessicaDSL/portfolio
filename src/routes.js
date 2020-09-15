@@ -8,11 +8,11 @@ import NotifyPage from "./pages/NotifyPage";
 
 export default function Routes() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/" exact component={DefaultPage} />
         <Route path="/carstore" component={CarStorePage} />
-        <Route path="/donaty" component={AutiPage} />
+        <Route path="/auti" component={AutiPage} />
         <Route path="/notify" component={NotifyPage} />
       </Switch>
     </BrowserRouter>
