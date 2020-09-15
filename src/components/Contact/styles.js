@@ -11,6 +11,7 @@ export const Container = styled.div`
   font-family: FiraCodeRetina;
   h1 {
     font-family: FiraCode;
+    font-size: 2.125rem;
   }
   h3 {
     font-family: FiraCodeRetina;
