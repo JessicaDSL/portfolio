@@ -10,6 +10,7 @@ align-items: center;
     color: #707070;
     text-align: center;
     margin: 10% 0;
+    font-size: 2.125rem;
   }
   img {
     width: 50%;
