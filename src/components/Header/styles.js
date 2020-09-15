@@ -10,7 +10,7 @@ export const Container = styled.div`
   a {
     color: #707070;
     padding: 0 40px 0 0;
-    font-size: normal;
+    font-size: 1.3125rem;
   }
 `;
 
