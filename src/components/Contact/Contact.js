@@ -36,7 +36,7 @@ const Contact = () => {
               </p>
               <p>
                 <br />
-                jessikurt@gmail.com
+                <span>jessikurt@gmail.com</span>
                 <br />
                 <br />
               </p>
