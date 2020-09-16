@@ -11,6 +11,10 @@ export const Container = styled.div`
     color: #707070;
     padding: 0 40px 0 0;
     font-size: 1.3125rem;
+    ${media.lessThan("500px")`
+        padding: 0 10px;
+        font-size: .8rem;
+    `}
   }
 `;
 
@@ -19,7 +23,8 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: flex-end;
   ${media.lessThan("910px")`
-  width: 93%;
+  width: 30%;
+  justify-content: center;
   `}
 `;
 
@@ -32,9 +37,14 @@ export const List = styled.ul`
     border-right: 2px solid #707070;
     &:nth-child(3) {
       border: 0;
-      margin: 0 0 0 15px;
     }
+    ${media.lessThan("400px")`
+        margin: 0;
+    `}
   }
+  
+    
+  
 `;
 
 export const LineA = styled.div`
@@ -43,7 +53,7 @@ export const LineA = styled.div`
   height: 1px;
   background: #707070;
   ${media.lessThan("910px")`
-  width: 20%;
+  width: 10%;
   `}
 `;
 
