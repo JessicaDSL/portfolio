@@ -19,13 +19,13 @@ const Portfolio = () => {
 
       <Gallery>
         <h1>Portfolio</h1>
-          <Link to={"/notify"} target="blank">
+          <Link to={"/notify"}>
             <img src={Notify} alt="" />
           </Link>
-          <Link to={"/carstore"} target="blank">
+          <Link to={"/carstore"}>
             <img src={CarStore} alt="" />
           </Link>
-          <Link to={"/donaty"} target="blank">
+          <Link to={"/auti"}>
             <img src={Donaty} alt="" />
           </Link>
           <img src={Comming} alt="" />
