@@ -51,11 +51,21 @@ export const Section = styled.section`
   justify-content: space-between;
   width: 80%;
   img {
-    width: 50%;
+    width: 80%;
   }
+  ${media.lessThan("600px")`
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+  span {
+    color: #de3163;
+  }
+    `}
 `;
 
 export const Aside = styled.aside`
+
   img {
     margin: 5% 0 5% 20%;
   }
@@ -72,19 +82,24 @@ export const Links = styled.div`
   margin: 10% 0;
   align-content: space-between;
   img {
-    width: 30%;
+    width: 40%;
+    height: auto;
     margin: 0 5% 0 0;
+    ${media.lessThan("600px")`
+    display: none;
+    `}
   }
   p {
     margin: 0 0 5% 0;
   }
+
 `;
 
 export const Main = styled.main`
   display: flex;
   img {
     width: 28%;
-    height: 200px;
+    height: auto;
   }
 `;
 
@@ -93,6 +108,12 @@ export const List = styled.ul`
   a {
     color: #707070;
   }
+  ${media.lessThan("600px")`
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+    `}
 `;
 
 export const ListItem = styled.li`
