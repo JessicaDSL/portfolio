@@ -1,5 +1,6 @@
 import React from "react";
 
+import ArrowLeft from '../../components/ArrowLeft';
 import HeaderSection from '../../components/CarStore/HeaderSection';
 import ProductsSection from '../../components/CarStore/ProductsSection';
 import FeatureSection from '../../components/CarStore/FeatureSection';
@@ -15,6 +16,7 @@ import { Container, Hr } from "./styles";
 const CarStorePage = () => {
   return (
     <Container>
+      <ArrowLeft />
       <HeaderSection />
       <ProductsSection />
       <FeatureSection />
