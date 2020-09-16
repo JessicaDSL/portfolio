@@ -1,5 +1,6 @@
 import React from 'react';
 
+import ArrowLeft from '../../components/ArrowLeft';
 import MenuNav from '../../components/Auti/MenuNav';
 import HeaderSection from '../../components/Auti/HeaderSection';
 import DonationSection from '../../components/Auti/DonationSection';
@@ -12,6 +13,7 @@ import { Container } from './styles';
 const AutiPage = () => {
   return(
     <Container>
+      <ArrowLeft />
       <MenuNav />
       <HeaderSection />
       <DonationSection />
