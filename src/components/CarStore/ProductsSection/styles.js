@@ -1,9 +1,12 @@
 import styled from "styled-components";
-
+import media from 'styled-media-query';
 
 export const Container = styled.div`
   min-height: 810px;
   width: 100%;
+  ${media.lessThan("1180px")`
+    display: none;
+  `}
 `;
 
 export const Content = styled.div`
@@ -32,6 +35,7 @@ export const LightGrayContent = styled.div`
   width: 50%;
   height: 405px;
   float: left;
+  justify-content: space-between;
   
   img {
     width: 400px;
@@ -46,4 +50,5 @@ export const DarkGrayContent = styled.div`
   width: 50%;
   height: 405px;
   float: left;
+  justify-content: space-between;
 `;
