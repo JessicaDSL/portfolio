@@ -31,10 +31,12 @@ export const Container = styled.div`
 export const Content = styled.div`
   color: #ff3448;
   font-size: 15px;
+  
   svg {
     color: #ffffff;
     width: 30px;
     height: 15px;
+    margin: 15% 0;
   }
   
   a {
