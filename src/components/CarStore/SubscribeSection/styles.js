@@ -31,7 +31,6 @@ export const Container = styled.div`
 export const Content = styled.div`
   color: #ff3448;
   font-size: 15px;
-
   svg {
     color: #ffffff;
     width: 30px;
@@ -40,7 +39,6 @@ export const Content = styled.div`
   
   a {
     margin: 10px;
-    padding: 20px 0;
   }
 `;
 
