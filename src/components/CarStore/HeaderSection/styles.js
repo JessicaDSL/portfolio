@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 
 import BackCar from "../../../assets/image/carstore/fundo-carro.png";
 
@@ -12,28 +13,40 @@ export const Container = styled.div`
   flex-direction: column;
   min-height: 872px;
   width: 100%;
-
   div {
     background-color: #212121;
     justify-items: center;
   }
+
+  ${media.lessThan("500px")`
+  min-height: 300px;
+    background: none;
+    
+  `}
 `;
 
 export const Content = styled.div`
-  height: 100px;
+  min-height: 100px;
   display: flex;
   background-color: #212121;
   justify-content: center;
   align-items: center;
-
+  width: 100%;
   a {
     padding: 0 30px 0 0;
   }
+
+  ${media.lessThan("500px")`
+    flex-direction: column;
+    background: purple;
+  `}
 `;
 
 export const List = styled.ul`
   display: flex;
   width: 320px;
+  ${media.lessThan("500px")`
+  `}
 `;
 
 export const ListItem = styled.li`
