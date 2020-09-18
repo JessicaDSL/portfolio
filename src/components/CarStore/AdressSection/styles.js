@@ -51,11 +51,14 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 385px;
+  
 
   hr {
     margin: 5px 0 36px 0;
   }
+  ${media.lessThan("900px")`
+  max-width: 95%;
+  `}
 `;
 
 export const List = styled.ul`
