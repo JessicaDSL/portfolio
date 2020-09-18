@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from 'styled-media-query';
 
 export const Container = styled.div`
   max-height: 100px;
@@ -10,8 +11,8 @@ export const Container = styled.div`
   justify-content: space-between;
   width: 65%;
   margin: 10px 0 0 30px;
-
-  h1 {
+  
+    h1 {
     font-family: Lato;
     font-weight: bold;
     margin: 0 0 0 30px;
@@ -38,16 +39,31 @@ export const Container = styled.div`
   }
   
   b {
-    margin: 0 0 0 215px;
+    text-align: left;
     font-family: Lato;
     font-weight: bold;
   }
+  ${media.lessThan("800px")`
+  min-height: 150px;
+  background: blue;
+  justify-content: space-between;
+  width: 90%;
+  border-bottom: 3px solid #595959;
+  b{
+    margin: 0;
+  }
+  `}
 `;
 
-export const Content = styled.div``;
+export const Content = styled.div`
+${media.lessThan("800px")`
+width: 100%;
+  margin: 0 30px;
+  background: blue;
+  `}
+`;
 
 export const List = styled.ul`
-list-style: none;
 `;
 
 export const ListItem = styled.li`
