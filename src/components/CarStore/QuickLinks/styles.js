@@ -8,6 +8,7 @@ p{
   font-weight: bold;
   color: #ff3448;
   font-size: 15px;
+  text-align: center;
   }
   `;
 
