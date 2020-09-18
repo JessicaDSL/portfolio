@@ -47,6 +47,10 @@ export const Container = styled.div`
   }
   ${media.lessThan("970px")`
     flex-direction: column;
+    min-height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     hr{
       display: none;
     }
@@ -58,6 +62,11 @@ export const Content = styled.div`
   justify-content: space-around;
   ${media.lessThan("640px")`
     margin: 50px 0;
+    
+  `}
+  ${media.lessThan("970px")`
+    width: 100%;
+    
   `}
   
 `;
