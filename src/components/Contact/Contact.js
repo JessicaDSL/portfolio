@@ -16,6 +16,8 @@ import {
 import Map from "../../assets/image/contact/portugal.png";
 import Photo from "../../assets/image/contact/photo.png";
 
+import FooterSection from '../FooterSection';
+
 const Contact = () => {
   return (
     <Container id="contact">
@@ -59,6 +61,7 @@ const Contact = () => {
           <h3>Portugal</h3>
         </Aside>
       </Section>
+      <FooterSection />
     </Container>
   );
 };

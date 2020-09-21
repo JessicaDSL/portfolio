@@ -2,7 +2,7 @@ import React from "react";
 
 import {
   FaFacebook,
-  FaLinkedinIn,
+  FaLinkedin,
   FaInstagram,
   FaGithub,
 } from "react-icons/fa";
@@ -17,7 +17,7 @@ export const list = [
     url: "https://www.github.com/jessicaDSL",
   },
   {
-    icon: <FaLinkedinIn />,
+    icon: <FaLinkedin />,
     url: "https://www.linkedin.com/in/jessicadsl",
   },
   {
