@@ -25,6 +25,12 @@ export const Container = styled.div`
   }
   ${media.lessThan("900px")`
     flex-direction: column;
+    text-align: center;
+    
+    hr {
+      margin: 0 auto;
+    }
+    
   `}
 `;
 
@@ -53,7 +59,10 @@ export const List = styled.ul`
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-
+  button {
+      margin: 0 auto;
+      background: blue;
+    }
   label {
     color: #887979;
     font-size: small;
@@ -76,6 +85,14 @@ export const Form = styled.form`
     text-transform: uppercase;
     margin: 10px 0 130px 0;
   }
+  ${media.lessThan("900px")`
+    min-height: 400px;
+    justify-content: space-around;
+    button {
+      margin: 0 auto;
+    
+    }
+  `}
 `;
 
 export const Input = styled.input`

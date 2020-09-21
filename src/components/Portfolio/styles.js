@@ -10,7 +10,7 @@ export const Container = styled.div`
     font-family: FiraCode;
     color: #707070;
     text-align: center;
-    margin: 10% 0;
+    margin: 5% 0;
     font-size: 2.125rem;
   }
   img {
@@ -37,18 +37,18 @@ export const Gallery = styled.div`
 
 export const Content = styled.div`
   display: flex;
-  margin: 8% 0;
+  margin: 2% 0;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   svg {
-    color: #707070;
+    color: rgba(0, 0, 0, .2);
     font-size: 2rem;
   }
 `;
 
 export const LineA = styled.div`
-  width: 10%;
-  height: 1px;
-  background: #707070;
+  width: 5%;
+  height: .5px;
+  background: rgba(0, 0, 0, .2);
 `;

@@ -25,27 +25,27 @@ export const Container = styled.div`
   img {
     width: 100%;
     height: auto;
-    ${media.lessThan("1080px")`
+    ${media.lessThan("1010px")`
       margin: 15% 0;
     `}
   }
-  ${media.lessThan("1080px")`
+  ${media.lessThan("1010px")`
   justify-content: center;
     `}
 `;
 
 export const Content = styled.div`
 display: flex;
-width: 85%;
-${media.lessThan("1080px")`
-      margin: 15% 0;
-    `}
-${media.lessThan("1080px")`
-      flex-direction: column;
-      text-align: center;
-      width: 90%;
-      p{
-        max-width: 100%;
-      }
-    `}
+width: 90%;
+${media.lessThan("1010px")`
+  margin: 5% 0;
+  `}
+${media.lessThan("1010px")`
+  flex-direction: column;
+  text-align: center;
+  width: 90%;
+  p{
+    max-width: 100%;
+  }
+`}
 `;
