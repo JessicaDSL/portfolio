@@ -5,7 +5,7 @@ import { Container, List, LineA, LineB, Nav } from "./styles";
 
 const Header = () => {
   return (
-    <Container>
+    <Container id="header">
       <LineA></LineA>
       <Nav>
         <List>

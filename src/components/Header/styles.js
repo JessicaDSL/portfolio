@@ -1,10 +1,10 @@
-import styled from 'styled-components';
-import media from 'styled-media-query';
+import styled from "styled-components";
+import media from "styled-media-query";
 
 export const Container = styled.div`
   min-height: 200px;
   display: flex;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   justify-content: space-between;
   align-items: center;
   a {
@@ -16,6 +16,9 @@ export const Container = styled.div`
         font-size: .8rem;
     `}
   }
+  ${media.lessThan("500px")`
+  min-height: 100px;
+    `}
 `;
 
 export const Nav = styled.nav`
@@ -34,7 +37,7 @@ export const List = styled.ul`
   margin: 0 40px;
   li {
     margin: 0 15px;
-    border-right: 2px solid #707070;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
     &:nth-child(3) {
       border: 0;
     }
@@ -42,16 +45,12 @@ export const List = styled.ul`
         margin: 0;
     `}
   }
-  
-    
-  
 `;
 
 export const LineA = styled.div`
-
   width: 40%;
-  height: 1px;
-  background: #707070;
+  height: 0.5px;
+  background: rgba(0, 0, 0, 0.2);
   ${media.lessThan("910px")`
   width: 10%;
   `}
@@ -59,6 +58,6 @@ export const LineA = styled.div`
 
 export const LineB = styled.div`
   width: 10%;
-  height: 1px;
-  background: #707070;
+  height: 0.5px;
+  background: rgba(0, 0, 0, 0.2);
 `;
