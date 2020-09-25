@@ -29,7 +29,7 @@ margin: 20% 0 0 0;
 
 export const Content = styled.div`
 width: 100%;
-height: 100px;
+height: 50px;
   display: flex;
   justify-content: space-between;
 `;

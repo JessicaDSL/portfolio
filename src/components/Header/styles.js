@@ -11,12 +11,12 @@ export const Container = styled.div`
     color: #707070;
     padding: 0 40px 0 0;
     font-size: 1.3125rem;
-    ${media.lessThan("500px")`
+    ${media.lessThan("700px")`
         padding: 0 10px;
         font-size: .8rem;
     `}
   }
-  ${media.lessThan("500px")`
+  ${media.lessThan("700px")`
   min-height: 100px;
     `}
 `;
@@ -34,7 +34,6 @@ export const Nav = styled.nav`
 export const List = styled.ul`
   display: flex;
   justify-content: flex-start;
-  margin: 0 40px;
   li {
     margin: 0 15px;
     border-right: 1px solid rgba(0, 0, 0, 0.2);
@@ -51,7 +50,7 @@ export const LineA = styled.div`
   width: 40%;
   height: 0.5px;
   background: rgba(0, 0, 0, 0.2);
-  ${media.lessThan("910px")`
+  ${media.lessThan("1000px")`
   width: 10%;
   `}
 `;

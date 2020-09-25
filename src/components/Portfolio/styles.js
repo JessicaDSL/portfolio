@@ -17,12 +17,13 @@ export const Container = styled.div`
     width: 50%;
   }
   ${media.lessThan("960px")`
-  margin: 10% 0;
+  margin: 7% 0;
   img {
     width: 100%;
     margin: 3% 0;
   }
   `}
+  
 `;
 
 export const Gallery = styled.div`
@@ -38,7 +39,7 @@ export const Gallery = styled.div`
 
 export const Content = styled.div`
   display: flex;
-  margin: 2% 0;
+  margin: 3% 0;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -46,10 +47,16 @@ export const Content = styled.div`
     color: rgba(0, 0, 0, .2);
     font-size: 2rem;
   }
+  ${media.lessThan("960px")`
+    margin: 15% 0;
+  `}
 `;
 
 export const LineA = styled.div`
-  width: 5%;
+  width: 10%;
   height: .5px;
   background: rgba(0, 0, 0, .2);
+  ${media.lessThan("960px")`
+    width: 20%;
+  `}
 `;
