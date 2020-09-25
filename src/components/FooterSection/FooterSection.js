@@ -1,19 +1,20 @@
-import React from 'react';
+import React from "react";
 
-import { Container, LineA, LineB, Content } from './styles';
-import { FaArrowCircleUp } from 'react-icons/fa'
+import { Container, LineA, LineB, Content } from "./styles";
+import { FaArrowCircleUp } from "react-icons/fa";
 
 const FooterSection = () => {
-  return(
+  return (
     <Container>
+      <a href="#header">
+        <FaArrowCircleUp />
+      </a>
       <Content>
-      <LineA></LineA>
-      <a href="#header"><FaArrowCircleUp /></a>
+        <LineA></LineA>
+        <LineB></LineB>
       </Content>
-      
-      <LineB></LineB>
     </Container>
   );
-}
+};
 
 export default FooterSection;

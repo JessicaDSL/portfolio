@@ -17,6 +17,7 @@ export const Container = styled.div`
     width: 50%;
   }
   ${media.lessThan("960px")`
+  margin: 10% 0;
   img {
     width: 100%;
     margin: 3% 0;

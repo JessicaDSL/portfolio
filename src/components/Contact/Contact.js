@@ -7,16 +7,16 @@ import {
   LineA,
   LineB,
   List,
-  ListItem,
   Section,
   Aside,
   Links,
+  SocialMedia
 } from "./styles";
 
 import Map from "../../assets/image/contact/portugal.png";
 import Photo from "../../assets/image/contact/photo.png";
 
-import FooterSection from '../FooterSection';
+import FooterSection from "../FooterSection";
 
 const Contact = () => {
   return (
@@ -26,11 +26,11 @@ const Contact = () => {
         <LineB></LineB>
       </Content>
       <Section>
-        <div>
+        <Links>
           <h1>Contacts</h1>
-          <Links>
+          <div>
             <img src={Photo} alt="" />
-            <div>
+            <SocialMedia>
               <p>
                 Here you can find me <br />
                 on social networks and <br />
@@ -42,24 +42,26 @@ const Contact = () => {
                 <br />
                 <br />
               </p>
-
               <List>
                 {list.map((item, index) => (
-                  <ListItem key={index}>
+                  <li key={index}>
                     <a href={item.url} target="blank">
                       {item.icon}
                     </a>
-                  </ListItem>
+                  </li>
                 ))}
               </List>
-            </div>
-          </Links>
-        </div>
+            </SocialMedia>
+          </div>
+        </Links>
+
         <Aside>
-          <p>I live in</p>
+          <p>
+            I live in <span>Portugal</span>
+          </p>
           <img src={Map} alt="" />
-          <h3>Portugal</h3>
         </Aside>
+        
       </Section>
       <FooterSection />
     </Container>
