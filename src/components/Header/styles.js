@@ -12,8 +12,7 @@ export const Container = styled.div`
     padding: 0 40px 0 0;
     font-size: 1.3125rem;
     ${media.lessThan("700px")`
-        padding: 0 10px;
-        font-size: .8rem;
+    font-size: .8rem;
     `}
   }
   ${media.lessThan("700px")`
@@ -22,21 +21,18 @@ export const Container = styled.div`
 `;
 
 export const Nav = styled.nav`
-  width: 50%;
   display: flex;
-  justify-content: flex-end;
   ${media.lessThan("910px")`
-  width: 30%;
   justify-content: center;
   `}
 `;
 
 export const List = styled.ul`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   li {
     margin: 0 15px;
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, .2);
     &:nth-child(3) {
       border: 0;
     }

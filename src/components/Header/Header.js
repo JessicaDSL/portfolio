@@ -16,7 +16,7 @@ const Header = () => {
           ))}
         </List>
       </Nav>
-          <LineB></LineB>
+      <LineB></LineB>
     </Container>
   );
 };
