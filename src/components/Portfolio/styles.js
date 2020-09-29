@@ -45,7 +45,7 @@ export const Content = styled.div`
   align-items: center;
   svg {
     color: rgba(0, 0, 0, .2);
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   ${media.lessThan("960px")`
     margin: 15% 0;
