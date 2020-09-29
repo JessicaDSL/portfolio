@@ -2,8 +2,8 @@ import styled from "styled-components";
 import media from "styled-media-query";
 
 export const Container = styled.div`
-height: 800px;
-margin: 20% 0 0 0;
+  height: 800px;
+  margin: 20% 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,19 +24,21 @@ margin: 20% 0 0 0;
   svg {
     cursor: pointer;
   }
-  
+  ${media.lessThan("600px")`
+  height: 560px;
+  `}
 `;
 
 export const Content = styled.div`
-width: 100%;
-height: 50px;
+  width: 100%;
+  height: 50px;
   display: flex;
   justify-content: space-between;
 `;
 
 export const LineA = styled.div`
   width: 20%;
-  height: .5px;
+  height: 0.5px;
   background: rgba(0, 0, 0, 0.2);
 `;
 
@@ -53,6 +55,7 @@ export const Section = styled.section`
   justify-content: center;
   align-items: center;
   ${media.lessThan("600px")`
+  height: 300px;
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -118,6 +121,11 @@ export const Links = styled.div`
 export const SocialMedia = styled.div`
   display: flex;
   flex-direction: column;
+
+  ${media.lessThan("600px")`
+  justify-content: space-between;
+  min-height: 180px;
+  `}
 `;
 
 export const List = styled.ul`
@@ -125,12 +133,8 @@ export const List = styled.ul`
   a {
     color: #707070;
   }
-  li {
-    margin: 0 6% 0 0;
-  }
   ${media.lessThan("600px")`
-  margin: 8% 0 0 0;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
     `}
   svg {
