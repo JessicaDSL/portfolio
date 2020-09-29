@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.118f860a.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.118f860a.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.6383d866.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.6383d866.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
     "static/js/2.33b8e121.chunk.js": "/portfolio/static/js/2.33b8e121.chunk.js",
     "static/js/2.33b8e121.chunk.js.map": "/portfolio/static/js/2.33b8e121.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.9bd825877fbab87d99c4f232a65a50b8.js": "/portfolio/precache-manifest.9bd825877fbab87d99c4f232a65a50b8.js",
+    "precache-manifest.9127bfcbe56fe742b24655ab59b6051f.js": "/portfolio/precache-manifest.9127bfcbe56fe742b24655ab59b6051f.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/js/2.33b8e121.chunk.js.LICENSE.txt": "/portfolio/static/js/2.33b8e121.chunk.js.LICENSE.txt",
     "static/media/FiraCodet.ttf": "/portfolio/static/media/FiraCodet.addbb673.ttf",
@@ -61,6 +61,6 @@
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
     "static/js/2.33b8e121.chunk.js",
-    "static/js/main.118f860a.chunk.js"
+    "static/js/main.6383d866.chunk.js"
   ]
 }
