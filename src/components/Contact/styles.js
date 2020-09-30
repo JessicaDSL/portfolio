@@ -63,7 +63,8 @@ export const Section = styled.section`
   margin: 0;
   text-align: center;
   span {
-    color: #de3163;
+    color: #ff0099;
+    font-weight: 600;
   }
     `}
 `;
@@ -77,8 +78,9 @@ export const Aside = styled.aside`
     margin: 20px 0 0 0;
   }
   span {
-    color: #de3163;
-    font-weight: 600;
+    /*color: #de3163;*/
+    color: #ff0099;
+    font-weight: 500;
     margin: 8% 0 6% 0;
   }
   img {
