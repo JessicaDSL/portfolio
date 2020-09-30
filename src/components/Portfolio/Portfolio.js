@@ -28,7 +28,7 @@ const Portfolio = () => {
           <Link to={"/auti"}>
             <img src={Donaty} alt="" />
           </Link>
-          <img src={Comming} alt="" />
+          <img src={Comming} alt="" className="comming" />
       </Gallery>
     </Container>
   );

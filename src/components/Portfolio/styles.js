@@ -10,13 +10,13 @@ export const Container = styled.div`
     font-family: FiraCode;
     color: #707070;
     text-align: center;
-    margin: 5% 0;
-    font-size: 2.125rem;
+    margin: 20px 0;
+    font-size: 1rem;
   }
   img {
     width: 50%;
   }
-  ${media.lessThan("960px")`
+  ${media.lessThan("910px")`
   margin: 7% 0;
   img {
     width: 100%;
@@ -27,13 +27,31 @@ export const Container = styled.div`
 `;
 
 export const Gallery = styled.div`
-  width: 80%;
-  ${media.lessThan("960px")`
+  width: 85%;
+  ${media.lessThan("910px")`
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 95%;
     justify-content: center;
     align-items: center;
+    img {
+   padding: 1.5px;
+   border: .2px solid rgba(0, 0, 0, .1);
+   background-color:#eee;
+}
+h1 {
+  font-size: 1rem;
+  margin: 0;
+}
+    .comming {
+      display: none;
+    }
+  `}
+  ${media.greaterThan("2101px")`
+  h1 {
+  font-size: 2.5rem;
+  margin: 30px 0;
+}
   `}
 `;
 
@@ -47,7 +65,7 @@ export const Content = styled.div`
     color: rgba(0, 0, 0, .2);
     font-size: 1.5rem;
   }
-  ${media.lessThan("960px")`
+  ${media.lessThan("910px")`
     margin: 15% 0;
   `}
 `;
@@ -56,7 +74,7 @@ export const LineA = styled.div`
   width: 10%;
   height: .5px;
   background: rgba(0, 0, 0, .2);
-  ${media.lessThan("960px")`
+  ${media.lessThan("910px")`
     width: 20%;
   `}
 `;
