@@ -2,26 +2,32 @@ import styled from "styled-components";
 import media from "styled-media-query";
 
 export const Container = styled.div`
-  min-height: 200px;
+  min-height: 350px;
   display: flex;
   font-family: "Segoe UI", sans-serif;
   justify-content: space-between;
   align-items: center;
   a {
     color: #707070;
-    padding: 0 40px 0 0;
-    font-size: 1.3125rem;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
     ${media.lessThan("700px")`
-    font-size: .8rem;
+    font-size: .6rem;
+    `}
+    ${media.greaterThan("1600px")`
+        margin: 0;
+        font-size: 1.2rem;
     `}
   }
-  ${media.lessThan("700px")`
-  min-height: 100px;
+  ${media.lessThan("1600px")`
+  min-height: 150px;
     `}
 `;
 
 export const Nav = styled.nav`
   display: flex;
+  width: 60%;
+  justify-content: flex-end;
   ${media.lessThan("910px")`
   justify-content: center;
   `}
@@ -31,13 +37,21 @@ export const List = styled.ul`
   display: flex;
   justify-content: center;
   li {
-    margin: 0 15px;
-    border-right: 1px solid rgba(0, 0, 0, .2);
+    display: flex;
+    padding: 0 22px;
+    border-right: 0.8px solid rgba(0, 0, 0, 0.2);
     &:nth-child(3) {
       border: 0;
     }
     ${media.lessThan("400px")`
+    padding: 0 16px;
         margin: 0;
+    `}
+    ${media.greaterThan("1600px")`
+    position: relative;
+
+        margin: 0;
+        left: 30%;
     `}
   }
 `;
