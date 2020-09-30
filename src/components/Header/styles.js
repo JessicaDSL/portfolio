@@ -26,7 +26,7 @@ export const Container = styled.div`
 
 export const Nav = styled.nav`
   display: flex;
-  width: 60%;
+  width: 40%;
   justify-content: flex-end;
   ${media.lessThan("910px")`
   justify-content: center;
@@ -47,12 +47,7 @@ export const List = styled.ul`
     padding: 0 16px;
         margin: 0;
     `}
-    ${media.greaterThan("1600px")`
-    position: relative;
-
-        margin: 0;
-        left: 30%;
-    `}
+    
   }
 `;
 
@@ -60,7 +55,7 @@ export const LineA = styled.div`
   width: 40%;
   height: 0.5px;
   background: rgba(0, 0, 0, 0.2);
-  ${media.lessThan("1000px")`
+  ${media.lessThan("910px")`
   width: 10%;
   `}
 `;
