@@ -1,20 +1,20 @@
 import React from "react";
 
-import { Container, Content } from "./styles";
+import { Container, Content, Image, Main } from "./styles";
 import Background from "../../assets/image/home/bg01.png";
 
 const Home = () => {
   return (
     <Container id="home">
       <Content>
-        <div>
+        <Main>
           <h1>JÉSSICA LIMA</h1>
           <h3>Frontend Developer</h3>
           <p>
             Hello World, I'm a web developer, and i was born in Brazil, Rio de
             Janeiro. Currently live in Portugal. I am passionate about
             technology, games, creativity, and making dreams come true through
-            the logic of programing.
+            the logic of <br/>programming.
           </p>
           <p>
             I am currently focused on website development and maintenance. Using
@@ -22,10 +22,10 @@ const Home = () => {
             technologies
           </p>
           <p>:)</p>
-        </div>
-        <div>
+        </Main>
+        <Image>
           <img src={Background} alt="" />
-        </div>
+        </Image>
       </Content>
     </Container>
   );
