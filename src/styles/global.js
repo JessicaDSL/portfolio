@@ -3,6 +3,7 @@ import media from "styled-media-query";
 
 import Gadugi from '../assets/fonts/gadugi-2.ttf';
 import FiraCodeRetina from '../assets/fonts/fira-code-retina-maisfontes/fira-code-retina.ttf';
+import Roboto from '../assets/fonts/roboto/Roboto-Regular.ttf'
 import FiraCode from '../assets/fonts/Fira_Code/FiraCodet.ttf';
 
 
@@ -21,6 +22,8 @@ export default createGlobalStyle`
     ${media.lessThan("360px")`
       font-size: 12px;
     `}
+    font-family: Roboto;
+    background: #fff;
   }
 
   button {
@@ -39,6 +42,14 @@ export default createGlobalStyle`
     font-family: Gadugi;
     src: url(${Gadugi});
   }
+
+  @font-face {
+    font-family: Roboto;
+    src: url(${Roboto});
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:400,700&display=swap');
+
 
   @font-face {
     font-family: FiraCodeRetina;
