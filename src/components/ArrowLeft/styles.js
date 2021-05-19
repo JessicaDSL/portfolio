@@ -14,7 +14,7 @@ export const Container = styled.div`
     font-size: .5rem;
   }
   svg {
-    margin: 6px 6px 0 0;
+    margin: 5px 6px 0 0;
   }
   
 `;
