@@ -11,7 +11,7 @@ export const Container = styled.div`
     color: #707070;
     text-align: center;
     margin: 20px 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   img {
     width: 50%;
