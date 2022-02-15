@@ -1,48 +1,43 @@
-import React from "react";
+import React, { useRef } from "react";
 import emailjs from "emailjs-com";
-import apikeys from "../../apikey";
+import { Container } from "./styles";
 
 const FormRequest = () => {
-  const onSubmit = (e) => {
-    e.preventDefault();
+  const form = useRef();
 
+  const sendEmail = (e) => {
+    e.preventDefault();
     emailjs
-      .sendForm("gmail", apikeys.TEMPLATE_ID, e.target, apikeys.USER_ID)
+      .sendForm(
+        "service_sqnse53",
+        "template_3ol6ani",
+        form.current,
+        "user_qEnoWaKlEEdNC2NSRTgMn"
+      )
       .then(
         (result) => {
-          alert("Mensagem enviada, retornarei em breve", result.text);
+          console.log(result.text);
         },
         (error) => {
-          alert("Ocorreu um erro, tente novamente", error.text);
+          console.log(error.text);
         }
       );
   };
 
   return (
-    <form className="form" onSubmit={onSubmit}>
-      <p>Seu nome</p>
-      <input
-        name="name"
-        type="text"
-        placeholder="Name..."
-        className="form__input"
-      />
-      <p>Assunto</p>
-      <input
-        name="subject"
-        type="text"
-        placeholder="Assunto..."
-        className="form__input"
-      />
-      <p>Your Message:</p>
-      <textarea
-        name="message"
-        type="text"
-        placeholder="Your Message…"
-        className="form__input-message"
-      ></textarea>
-      <button className="form__input — button">Send Message</button>
-    </form>
+    <Container>
+      <form ref={form} onSubmit={sendEmail} method="POST">
+        <p>Seu nome:</p>
+        <input name="name" type="text" />
+        <p>Email:</p>
+        <input name="email" type="text" />
+        <p>Your Message:</p>
+        <textarea name="message" type="text" cols="5" rows="5"></textarea>
+        <button type="submit" className="form__input — button">
+          Send Message!
+        </button>
+      </form>
+    </Container>
   );
 };
 

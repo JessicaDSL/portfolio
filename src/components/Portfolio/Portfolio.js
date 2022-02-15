@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState, useContext } from "react";
+import React, { useRef, useEffect, useContext } from "react";
 import { gsap, Power2, Power0 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { toast } from "react-toastify";
@@ -9,7 +9,6 @@ import Project from '../Project'
 import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
-//import Pokedex from "../../assets/image/Portfolio/pokedex.png";
 import {
   Background,
   Container,
@@ -17,12 +16,9 @@ import {
   Image,
   Info,
   Arrows,
-  ProjectInfo,
 } from "./styles";
 
 const Portfolio = () => {
-  console.log(projects);
-  //const [count, setCount] = useState(1);
   const titleRef = useRef();
   const imageRef = useRef();
   const infoRef = useRef();
@@ -46,14 +42,12 @@ const Portfolio = () => {
       delay: 0.5,
       scrollTrigger: ".title",
       opacity: 1,
-     // width: 500,
     });
   });
 
   useEffect(() => {
     gsap.fromTo(
       imageRef.current,
-
       { y: 0, opacity: 1, Power0 },
       {
         ease: Power2.easeOut,
@@ -65,11 +59,6 @@ const Portfolio = () => {
       }
     );
   });
-
-  useEffect(() => {}, [count]);
-  if(count === 1) {
-    console.log('oi pokedex')
-  }
 
   return (
     <Background id="portfolio">
