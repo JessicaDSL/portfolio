@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   background: #141628;
@@ -10,6 +10,6 @@ export const Container = styled.div`
   font-size: small;
   svg {
     color: #fd4370;
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
   }
 `;

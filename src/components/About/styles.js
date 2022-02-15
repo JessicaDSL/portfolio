@@ -18,7 +18,7 @@ export const Title = styled.div`
   justify-content: center;
   opacity: 0;
   width: 86%;
-  margin: 3rem 0 0.3rem 0;
+  margin: 6rem 0 0.3rem 0;
   p {
     width: 100%;
     display: flex;
@@ -31,7 +31,7 @@ export const Title = styled.div`
     color: #fff;
     font-weight: 600;
     margin: 1rem 0 0 0;
-    font-size: large;
+    font-size: x-large;
   }
   hr {
     height: 0.2rem;
@@ -47,15 +47,25 @@ export const Title = styled.div`
     letter-spacing: 0.9px;
     margin: 0 0 0 0.5rem;
   }
-  ${media.greaterThan("medium")`
+  ${media.between("medium", "huge")`
   width: 80%;
-  margin: 1.8rem 0 0rem 0;
   h2 {
     margin: .8rem 0 0 0;
-    font-size: small;
+    font-size: x-large;
   }
   h3 {
-    font-size: small;
+    font-size: medium;
+  }
+  `}
+  ${media.greaterThan("huge")`
+  margin: 8rem 0 0 0;
+  width: 80%;
+  h2 {
+    margin: .8rem 0 1rem 0;
+    font-size: xx-large;
+  }
+  h3 {
+    font-size: large;
   }
   `}
 `;
@@ -72,8 +82,7 @@ export const ProjectInfo = styled.div`
   p {
     color: #d1d5dc;
     letter-spacing: 0.2px;
-    font-family: "Roboto";
-    font-size: small;
+    font-size: medium;
     margin: 0;
   }
   a {
@@ -99,10 +108,10 @@ export const ProjectInfo = styled.div`
   span {
     display: flex;
     align-items: center;
-    font-weight: 500;
+    font-weight: 700;
     color: #fff;
     letter-spacing: 0.3px;
-    font-size: small;
+    font-size: large;
     margin: 0 0 1rem 0;
     hr {
       width: 1rem;
@@ -113,25 +122,29 @@ export const ProjectInfo = styled.div`
       margin: 0 0.5rem 0 0;
     }
   }
-  ${media.greaterThan("medium")`
+  ${media.greaterThan("medium", "huge")`
     display: flex;
-    margin: 0.5rem 0 5rem 0;
-    width: 60%;
+    margin: 0.8rem 0 0rem 0;
+    width: 100%;
+    
     div {
-      margin: 1rem 0;
+      margin: 1.2rem 0;
     }
   p {
-    max-height: 100px;
     margin: 0;
-    font-size: xx-small;
+    font-size: large;
   }
+  a {
     button {
-      margin: 1rem 0 4rem 0;
-      height: 3rem;
-      width: 12rem;
+      margin: 0.5rem 0 4rem 0;
+      letter-spacing: 0.2px;
+    height: 2rem;
+    width: 10rem;
+      font-size: small;
     }
+  }
     span {
-      font-size: x-small;
+      font-size: x-large;
       margin: 0 0 .5rem 0;
       hr {
       width: .3rem;
@@ -139,6 +152,23 @@ export const ProjectInfo = styled.div`
       margin: 0 .5rem 0 0;
     }
     }
+  `}
+  ${media.greaterThan("huge")`
+  width: 92%;
+  p {
+    margin: 1rem 0;
+    font-size: x-large;
+    max-width: 80%;
+  }
+  a {
+    button {
+      margin: 0.8rem 0 6rem 0;
+      letter-spacing: 0.2px;
+    height: 3rem;
+    width: 14rem;
+      font-size: large;
+    }
+  }
   `}
 `;
 
@@ -149,23 +179,12 @@ export const Content = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 0 3rem 0;
   ${media.greaterThan("medium")`
   flex-direction: row;
   width: 80%;
   `}
-`;
-
-export const Image = styled.div`
-  display: none;
-  ${media.greaterThan("medium")`
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 70%;
-    img {
-    width: 55%;
-    //margin: 0 0 0 5rem;
-    opacity: 1;
-  }
+  ${media.greaterThan("huge")`
+    width: 86%;
   `}
 `;

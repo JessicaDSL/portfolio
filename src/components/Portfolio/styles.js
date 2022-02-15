@@ -1,15 +1,19 @@
 import styled from "styled-components";
 import media from "styled-media-query";
+
 import Bg from "../../assets/image/Portfolio/bg.png";
 
 export const Background = styled.div`
   width: 100%;
-  background: #1b1e32;
+  background: rgba(27, 30, 50);
   color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  ${media.greaterThan("medium")`
+    height: 500px;
+  `}
 `;
 
 export const Title = styled.div`
@@ -49,15 +53,15 @@ export const Title = styled.div`
     margin: 0 0 0 0.5rem;
   }
   ${media.greaterThan("medium")`
-  width: 80%;
-  margin: 1.5rem 0 0rem 0;
-  h2 {
-    margin: .8rem 0 0 0;
-    font-size: small;
-  }
-  h3 {
-    font-size: small;
-  }
+    width: 80%;
+    margin: 1.5rem 0 0rem 0;
+    h2 {
+      margin: .8rem 0 0 0;
+      font-size: medium;
+    }
+    h3 {
+      font-size: medium;
+    }
   `}
 `;
 
@@ -73,7 +77,7 @@ export const Container = styled.div`
     background: none;
   }
   ${media.greaterThan("medium")`
-  flex-direction: row;
+    flex-direction: row;
     width: 80%;
     justify-content: flex-start;
     margin: 1.5rem 0 0 0;
@@ -81,11 +85,11 @@ export const Container = styled.div`
 `;
 
 export const Info = styled.div`
-display: flex;
-flex-direction: column;
-width: 100%;
-opacity: 0;
-${media.greaterThan("medium")`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  opacity: 0;
+  ${media.greaterThan("medium")`
     width:80%;
   `}
 `;
@@ -109,11 +113,6 @@ export const Arrows = styled.div`
   strong {
     margin: 0 1rem;
   }
-  ${media.greaterThan("medium")`
-  svg {
-    width: 1.5rem;
-    height: 1.5rem;
-  `}
 `;
 
 export const Image = styled.div`
@@ -122,7 +121,6 @@ export const Image = styled.div`
   display: flex;
   justify-content: center;
   padding: 0 0 0 2rem;
-  //background-color: gray ;
   background-image: url(${Bg});
   background-position: center center;
   background-repeat: no-repeat;
@@ -133,11 +131,11 @@ export const Image = styled.div`
     opacity: 1;
   }
   ${media.greaterThan("medium")`
-  background-size: 70% 70%;
-  margin: 0;
-  img {
-    width: 100%;
-    height: 175px;
-  }
+    background-size: 70% 70%;
+    margin: 0;
+    img {
+      width: 100%;
+      height: 175px;
+    }
   `}
 `;

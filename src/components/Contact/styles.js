@@ -10,10 +10,10 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   ul {
-    width: 80%;
+    width: 84%;
     display: flex;
-    justify-content: space-between;
-    margin: 2.5rem 0;
+    justify-content: flex-start;
+    margin: 1rem 0;
     li {
       display: flex;
       justify-content: center;
@@ -21,20 +21,43 @@ export const Container = styled.div`
       width: 4rem;
       height: 4rem;
       background: #262a43;
-      margin: 1rem;
+      margin: 0 1rem 0 0;
       border-radius: 4px;
       cursor: pointer;
+      svg {
+        font-size: xx-large;
+      }
       &:hover {
         background: #313757;
         transition: 0.5s ease-in-out;
       }
-      ${media.greaterThan("medium")`
-    margin: 1rem 2rem 0 0;
-    `}
     }
-    ${media.greaterThan("medium")`
+    ${media.between("medium", "huge")`
     justify-content: flex-start;
-    margin: 1.5rem 0;
+    margin: 0;
+    width: 80%;
+    margin: 1rem 0;
+      li {
+        margin: 0 2rem 0 0;
+      svg {
+        font-size: xxx-large;
+      }
+    }
+    `}
+
+    ${media.greaterThan("huge")`
+    justify-content: flex-start;
+    margin: 0;
+    width: 80%;
+    margin: 1.2rem 0;
+      li {
+        width: 4.8rem;
+        height: 4.8rem;
+        margin: 0 2rem 0 0;
+      svg {
+        font-size: xxx-large;
+      }
+      }
     `}
   }
 `;
@@ -46,7 +69,7 @@ export const Title = styled.div`
   justify-content: center;
   opacity: 0;
   width: 86%;
-  margin: 3rem 0 0.3rem 0;
+  margin: 6rem 0 0.3rem 0;
   p {
     width: 100%;
     display: flex;
@@ -59,7 +82,7 @@ export const Title = styled.div`
     color: #fff;
     font-weight: 600;
     margin: 1rem 0 0 0;
-    font-size: large;
+    font-size: x-large;
   }
   hr {
     height: 0.2rem;
@@ -75,22 +98,33 @@ export const Title = styled.div`
     letter-spacing: 0.9px;
     margin: 0 0 0 0.5rem;
   }
-  ${media.greaterThan("medium")`
+  ${media.between("medium", "huge")`
   width: 80%;
-  margin: 1.8rem 0 0rem 0;
+  margin: 7rem 0 0 0;
   h2 {
     margin: .8rem 0 0 0;
-    font-size: small;
+    font-size: x-large;
   }
   h3 {
-    font-size: small;
+    font-size: medium;
+  }
+  `}
+  ${media.greaterThan("huge")`
+  width: 80%;
+  margin: 8rem 0 0 0;
+  h2 {
+    margin: .8rem 0 0 0;
+    font-size: xx-large;
+  }
+  h3 {
+    font-size: large;
   }
   `}
 `;
 
 export const Email = styled.div`
-  margin: 3rem 0 0 0;
-  font-size: small;
+  margin: 1.5rem 0 0.8rem 0;
+  font-size: medium;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -100,56 +134,23 @@ export const Email = styled.div`
       color: #fd4370;
       font-size: medium;
     }
-    ${media.greaterThan("medium")`
-  width: 80%;
-  `}
+    ${media.between("medium", "huge")`
+      width: 80%;
+      font-size: medium;
+      margin: 1rem 0 .4rem 0;
+      font-size: large;
+      span {
+          font-size: large;
+        }
+      `}
+    ${media.greaterThan("huge")`
+      width: 80%;
+      font-size: medium;
+      margin: 1rem 0 .4rem 0;
+      font-size: x-large;
+      span {
+          font-size: x-large;
+        }
+    `}
   }
 `;
-
-export const Form = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 87%;
-  margin: 1.2rem 0;
-  input {
-    background: #141628;
-    border: 1px solid #d1d5dc;
-    height: 3rem;
-    border-radius: 4px;
-    margin: 0.5rem 0 1.8rem 0;
-    color: #fff;
-    padding: 0 1rem;
-  }
-  textarea {
-    background: #141628;
-    border: 1px solid #d1d5dc;
-    color: #fff;
-    border-radius: 4px;
-    margin: 0.5rem 0;
-    padding: 1rem;
-    font-size: medium;
-  }
-  button {
-    margin: 2rem 0 3rem 0;
-    background: #fd4370;
-    border: none;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 0.2px;
-    height: 3rem;
-    width: 12rem;
-    border-radius: 4px;
-    font-size: small;
-    &:hover {
-      background: #fb2e68;
-      position: relative;
-      top: -2px;
-      transition: 0.7s ease;
-    }
-  }
-  ${media.greaterThan("medium")`
-  width: 80%;
-  `}
-`;
-
-export const Input = styled.div``;
