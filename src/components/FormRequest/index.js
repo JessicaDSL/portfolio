@@ -1,3 +1,3 @@
-import FormRequest from './FormRequest';
+import FormRequest from "./FormRequest";
 
 export default FormRequest;
