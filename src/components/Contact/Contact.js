@@ -1,15 +1,12 @@
-import React, { useRef, useEffect, useState } from "react";
-import { gsap, Power2, Power0 } from "gsap";
-import emailjs from "emailjs-com";
-import { toast } from "react-toastify";
+import React, { useRef, useEffect } from "react";
+import { gsap, Power2 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FormRequest from "../FormRequest";
 
-import { Container, Title, Email, Input, Form } from "./styles";
-import { dark } from "@mui/material/styles/createPalette";
+import { Container, Title, Email } from "./styles";
 
 const Contact = () => {
   const titleRef = useRef();
