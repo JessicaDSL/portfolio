@@ -21,7 +21,7 @@ const Header = () => {
           </span>
         </Logo>
         <MenuDropdow className="dropdown">
-          <button onClick={() => setState(true)}>
+          <button onClick={() => (state ? setState(false) : setState(true))}>
             <MenuIcon />
           </button>
           <List onClick={() => setState(false)} state={state}>
