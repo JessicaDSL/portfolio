@@ -63,13 +63,19 @@ const Contact = () => {
       </Email>
       <ul>
         <li>
-          <GitHubIcon />
+          <a href="https://www.github.com/jessicaDSL" target="_blank" rel="noreferrer">
+            <GitHubIcon />
+          </a>
         </li>
         <li>
-          <LinkedInIcon />
+          <a href="https://www.linkedin.com/in/jessicadsl" target="_blank" rel="noreferrer">
+            <LinkedInIcon />
+          </a>
         </li>
         <li>
-          <TwitterIcon />
+          <a href="https://twitter.com/jlkisuco" target="_blank" rel="noreferrer">
+            <TwitterIcon />
+          </a>
         </li>
       </ul>
       <FormRequest />
