@@ -7,9 +7,6 @@ import { Section, Image, Info, Container } from "./styles";
 const HomePage = () => {
 
   const imageRef = useRef();
-  const firstTextRef = useRef();
-  const secTextRef = useRef();
-  const thristTextRef = useRef();
   const span = useRef();
   const btn = useRef();
   gsap.registerPlugin(ScrollTrigger);
@@ -23,48 +20,32 @@ const HomePage = () => {
   });
 
   useEffect(() => {
-    gsap.to(firstTextRef.current, {
-      y: 5,
-      duration: 1,
-      opacity: 1,
-    });
-    gsap.to(secTextRef.current, {
-      y: 10,
-      delay: 1,
-      duration: 1,
-      opacity: 1,
-    });
-    gsap.to(thristTextRef.current, {
-      delay: 2,
-      y: 20,
-      duration: 1,
-      opacity: 1,
-    });
     gsap.to(span.current, {
-      y: 35,
-      delay: 3,
+      y: 20,
+      delay: 8,
       duration: 1,
       opacity: 1,
     });
     gsap.to(btn.current, {
-      y: 10,
-      delay: 3,
+      y: 0,
+      delay: 9,
       duration: 1,
       opacity: 1,
     });
   });
+
+
   return (
     <Section>
       <Container>
         <Info>
-          <p className="text" ref={firstTextRef}>
+          <p>
             Hello World,
           </p>
-          <p ref={secTextRef}>
-            {" "}
+          <p>
             I'm <strong>Jéssica Lima</strong>,
-          </p>{" "}
-          <p ref={thristTextRef}> a front-end developer! :)</p>
+          </p>
+          <p> a front-end developer! :)</p>
           <span ref={span}>Come and see my work. </span>
           <a href="#portfolio">
             <button ref={btn}>My Work!</button>
