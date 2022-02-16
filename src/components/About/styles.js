@@ -133,6 +133,7 @@ export const ProjectInfo = styled.div`
   p {
     margin: 0;
     font-size: large;
+    max-width: 80%;
   }
   a {
     button {
@@ -158,7 +159,7 @@ export const ProjectInfo = styled.div`
   p {
     margin: 1rem 0;
     font-size: x-large;
-    max-width: 80%;
+    max-width: 75%;
   }
   a {
     button {

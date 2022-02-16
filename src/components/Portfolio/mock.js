@@ -1,5 +1,5 @@
 import Pokedex from "../../assets/image/Portfolio/pokedex.png";
-import GoJessyStore from "../../assets/image/Portfolio/gojessy.png";
+import GoJessyStore from "../../assets/image/Portfolio/gojessyy.png";
 
 export const projects = [
   {

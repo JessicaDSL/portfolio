@@ -21,7 +21,7 @@ export const Content = styled.div`
   justify-content: space-between;
   align-items: center;
   ${media.greaterThan("medium")`
-    width: 82%;
+    width: 80%;
   `}
 `;
 
@@ -45,7 +45,7 @@ export const Logo = styled.div`
     bottom: 1px;
   }
   ${media.greaterThan("huge")`
-    font-size: medium;
+    font-size: large;
   `}
 `;
 
@@ -81,7 +81,7 @@ export const Nav = styled.nav`
       justify-content: center;
       li {
       margin: 0 1rem;
-      font-size: small;
+      font-size: medium;
       font-family: 'Lato', sans-serif;
       }
     }
@@ -127,6 +127,5 @@ export const List = styled.ul`
     }
   }
   ${media.between("small", "medium")`
-    background: yellow;
   `}
 `;
