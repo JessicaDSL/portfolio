@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c8c348ed.css",
-    "main.js": "/portfolio/static/js/main.e4935304.js",
+    "main.js": "/portfolio/static/js/main.18315587.js",
     "static/media/bg.png": "/portfolio/static/media/bg.0131648ca9a7c0c4a831.png",
     "static/media/pokedex.png": "/portfolio/static/media/pokedex.e85b07b024cb0438ce8e.png",
     "static/media/gojessyy.png": "/portfolio/static/media/gojessyy.734952613ff3bc3c6f3a.png",
     "static/media/backgroundHomee.png": "/portfolio/static/media/backgroundHomee.9044d595a7cbbb84bb0c.png",
     "index.html": "/portfolio/index.html",
     "main.c8c348ed.css.map": "/portfolio/static/css/main.c8c348ed.css.map",
-    "main.e4935304.js.map": "/portfolio/static/js/main.e4935304.js.map"
+    "main.18315587.js.map": "/portfolio/static/js/main.18315587.js.map"
   },
   "entrypoints": [
     "static/css/main.c8c348ed.css",
-    "static/js/main.e4935304.js"
+    "static/js/main.18315587.js"
   ]
 }
