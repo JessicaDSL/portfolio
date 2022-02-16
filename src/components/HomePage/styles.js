@@ -14,6 +14,17 @@ from {
   }
 `;
 
+const type = keyframes`
+  from {width: 0; y: 0}
+  to { width: 100%; y: 100 }
+`;
+
+const type2 = keyframes`
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+`;
+
 export const Section = styled.section`
   width: 100%;
   background-color: #141628;
@@ -51,11 +62,20 @@ export const Info = styled.div`
   width: 86%;
   margin: 4rem 0 0 0;
   p {
+    padding: 1rem 0 0 0;
     font-size: x-large;
+    overflow: hidden;
     font-family: "Ubuntu", sans-serif;
-    opacity: 0;
+    //opacity: 0;
     white-space: nowrap;
     font-weight: 700;
+    animation: ${type} 4s steps(60, end);
+    &:nth-child(2) {
+      animation: ${type2} 8s steps(60, end);
+    }
+    &:nth-child(3) {
+      animation: ${type2} 12s steps(60, end);
+    }
   }
   span {
     margin: 0rem 0 0 0;
@@ -137,11 +157,13 @@ export const Info = styled.div`
       margin: .8rem 0 0 0;
       font-size: 1.5vw;
     }
-    button {
+    a{
+      button {
       margin: 3rem 0;
       height: 5.5vh;
       width: 15vw;
       font-size: 1vw;
+    }
     }
   `}
 `;
