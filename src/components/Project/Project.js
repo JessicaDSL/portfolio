@@ -10,7 +10,7 @@ const Project = ({ projectData }) => {
         {projectData.subtitle}
       </span>
       <p>{projectData.infoproject}</p>
-      <a href={`${projectData.url}`}>
+      <a href={`${projectData.url}`} target="_blank" rel="noreferrer">
         <button>Link to project</button>
       </a>
     </Container>
