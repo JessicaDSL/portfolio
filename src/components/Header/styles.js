@@ -5,13 +5,13 @@ export const Container = styled.div`
   background: #141628;
   position: fixed;
   width: 100%;
-  height: 4rem;
+  height: 4.5vh;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  ${media.greaterThan("large")`
-  height: 4.5rem;
+  ${media.greaterThan("huge")`
+  height: 8vh;
   `}
 `;
 
@@ -45,7 +45,10 @@ export const Logo = styled.div`
     bottom: 1px;
   }
   ${media.greaterThan("huge")`
-    font-size: large;
+    font-size: 1.5vw;
+    b{
+      font-size: 1.5vw;
+    }
   `}
 `;
 
@@ -83,6 +86,13 @@ export const Nav = styled.nav`
       margin: 0 1rem;
       font-size: medium;
       font-family: 'Lato', sans-serif;
+      }
+    }
+  `}
+  ${media.greaterThan("huge")`
+    ul {
+      li {
+        font-size: 1.6vw;
       }
     }
   `}

@@ -119,11 +119,29 @@ export const Info = styled.div`
       width: 10rem;
     }
   `}
-  ${media.greaterThan("large")`
+  ${media.between("medium", "large")`
+  
     p {
       width: 100%;
       font-size: xxx-large;
       margin: .2rem 0;
+    }
+  `}
+  ${media.greaterThan("large")`
+  width: 60%;
+  p {
+      width: 100%;
+      font-size: 2.6vw;
+      margin: .2rem 0;
+    }
+    span {
+      font-size: 1.5vw;
+    }
+    button {
+      margin: 3rem 0;
+      height: 4vh;
+      width: 10vw;
+      font-size: 1vw;
     }
   `}
 `;
@@ -133,7 +151,7 @@ export const Image = styled.div`
   display: none;
   opacity: 0;
   background-image: url(${Background});
-  background-size: 80% 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: 100% 100%;
   animation: ${animationDown} 5s linear;
