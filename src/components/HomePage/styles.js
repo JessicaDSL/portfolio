@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import media from "styled-media-query";
-import Background from "../../assets/image/HomePage/backgroundHome.png";
+import Background from "../../assets/image/HomePage/backgroundHomee.png";
 
 const animationDown = keyframes`
 from {
@@ -33,7 +33,7 @@ export const Container = styled.div`
   display: flex;
   width: 86%;
   margin: 8rem 0 5rem 0;
-  ${media.between("medium", "large")`
+  ${media.greaterThan("medium")`
     width: 80%;
     margin: 16rem 0 8rem 0;
   `}
@@ -103,11 +103,11 @@ export const Info = styled.div`
   ${media.between("medium", "large")`
     width: 85%;
     margin: 0;
-    //background: red;
+   // background: red;
     justify-content: center;
     p {
       width: 100%;
-      font-size: xxx-large;
+      font-size: x-large;
       margin: .2rem 0;
     }
     span {
@@ -133,13 +133,13 @@ export const Image = styled.div`
   display: none;
   opacity: 0;
   background-image: url(${Background});
-  background-size: 100% 100%;
+  background-size: 80% 100%;
   background-repeat: no-repeat;
   background-position: 100% 100%;
   animation: ${animationDown} 5s linear;
   ${media.between("medium", "large")`
     width: 80%;
-    //display: flex;
+    display: flex;
   ////  background: blue;
       margin: 0rem 0 0 0;
       justify-content: center;
