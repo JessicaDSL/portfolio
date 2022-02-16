@@ -33,10 +33,12 @@ export const Container = styled.div`
   display: flex;
   width: 86%;
   margin: 8rem 0 5rem 0;
-
+  ${media.between("medium", "large")`
+    width: 80%;
+    margin: 16rem 0 8rem 0;
+  `}
   ${media.greaterThan("medium")`
-width: 82%;
-margin: 14rem 0 8rem 0;
+
   `}
   ${media.between("large", "huge")`
   
@@ -101,10 +103,11 @@ export const Info = styled.div`
   ${media.between("medium", "large")`
     width: 85%;
     margin: 0;
+    //background: red;
     justify-content: center;
     p {
       width: 100%;
-      font-size: x-large;
+      font-size: xxx-large;
       margin: .2rem 0;
     }
     span {
@@ -136,7 +139,8 @@ export const Image = styled.div`
   animation: ${animationDown} 5s linear;
   ${media.between("medium", "large")`
     width: 80%;
-    display: flex;
+    //display: flex;
+  ////  background: blue;
       margin: 0rem 0 0 0;
       justify-content: center;
   `}
