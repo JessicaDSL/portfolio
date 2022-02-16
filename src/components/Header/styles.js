@@ -134,6 +134,7 @@ export const List = styled.ul`
     border-bottom: #eee;
     &:hover {
       background-color: #515885;
+      border-radius: 4px;
     }
   }
   ${media.between("small", "medium")`
