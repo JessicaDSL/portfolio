@@ -90,6 +90,7 @@ export const Container = styled.div`
     }
   `}
   ${media.greaterThan("large")`
+  background: red;
   p {
       max-height: 190px;
       max-width: 85%;
