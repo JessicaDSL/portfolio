@@ -11,7 +11,7 @@ const Project = ({ projectData }) => {
       </span>
       <p>{projectData.infoproject}</p>
       <a href={`${projectData.url}`}>
-        <button>Link para o projeto</button>
+        <button>Link to project</button>
       </a>
     </Container>
   );
