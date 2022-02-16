@@ -2,20 +2,20 @@ import styled from "styled-components";
 import media from "styled-media-query";
 
 export const Container = styled.div`
-  margin: 0 0 3rem 0;
+  margin: 0 0 5rem 0;
   h2 {
     margin: 2.2rem 0;
-    font-size: x-large;
+    font-size: xx-large;
     color: #fff;
     font-weight: 700;
   }
   p {
-    max-height: 100px;
+    max-height: 150px;
     overflow-y: auto;
     margin: 1rem 0 0 0;
     color: #d1d5dc;
     letter-spacing: 0.1px;
-    font-size: small;
+    font-size: medium;
     &::-webkit-scrollbar {
       display: none;
     }
@@ -43,10 +43,10 @@ export const Container = styled.div`
   span {
     display: flex;
     align-items: center;
-    font-weight: 500;
+    font-weight: 600;
     color: #fff;
     letter-spacing: 0.3px;
-    font-size: small;
+    font-size: medium;
     margin: 0 0 2rem 0;
     hr {
       width: 1rem;
@@ -61,15 +61,15 @@ export const Container = styled.div`
     list-style: disc;
     padding: 0 0 0 1rem;
   }
-  ${media.greaterThan("medium")`
-    h2 {
-      margin: 1rem 0;
-      font-size: x-large;
+  ${media.between("medium", "large")`
+  h2 {
+      margin: 1rem 0 2rem 0;
+      font-size: xx-large;
     }
     p {
-      max-height: 100px;
-      margin: 0;
-      font-size: small;
+      max-height: 150px;
+      margin: 1rem 0 1rem 0;
+      font-size: medium;
     }
     a {
       button {
@@ -80,13 +80,21 @@ export const Container = styled.div`
       }
     }
     span {
-      font-size: .7rem;
-      margin: 0 0 1rem 0;
+      font-size: medium;
+      margin: 0 0 1.8rem 0;
       hr {
         width: .3rem;
         height: 0.2rem;
         margin: 0 .5rem 0 0;
       }
+    }
+  `}
+  ${media.greaterThan("large")`
+  p {
+      max-height: 190px;
+      max-width: 85%;
+      margin: 1rem 0 0rem 0;
+      font-size: large;
     }
   `}
 `;
