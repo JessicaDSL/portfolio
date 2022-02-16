@@ -90,12 +90,11 @@ export const Container = styled.div`
     }
   `}
   ${media.greaterThan("large")`
-  background: red;
   p {
       max-height: 190px;
       max-width: 85%;
       margin: 1rem 0 0rem 0;
-      font-size: large;
+      font-size: medium;
     }
   `}
 `;
