@@ -120,10 +120,9 @@ export const Info = styled.div`
     }
   `}
   ${media.between("medium", "large")`
-  
     p {
       width: 100%;
-      font-size: xxx-large;
+      font-size: xx-large;
       margin: .2rem 0;
     }
   `}
@@ -131,16 +130,17 @@ export const Info = styled.div`
   width: 60%;
   p {
       width: 100%;
-      font-size: 2.6vw;
-      margin: .2rem 0;
+      font-size: 2.7vw;
+      margin: .8rem 0;
     }
     span {
+      margin: .8rem 0 0 0;
       font-size: 1.5vw;
     }
     button {
       margin: 3rem 0;
-      height: 4vh;
-      width: 10vw;
+      height: 5.5vh;
+      width: 15vw;
       font-size: 1vw;
     }
   `}
@@ -167,5 +167,6 @@ export const Image = styled.div`
       position: relative;
       top: 1rem;
       width: 80%;
+      background-size: 80% 100%;
   `}
 `;
