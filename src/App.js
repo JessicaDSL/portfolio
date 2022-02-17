@@ -9,7 +9,7 @@ const App = () => {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <Global />
-      <ToastContainer autoClose={3000} />
+      <ToastContainer autoClose={3000} position="bottom-right"/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/portfolio" element={<Portfolio />} />
