@@ -15,8 +15,8 @@ from {
 `;
 
 const type = keyframes`
-  from {width: 0; y: 0}
-  to { width: 100%; y: 100 }
+  from {width: 0}
+  to { width: 100% }
 `;
 
 const type2 = keyframes`
@@ -66,15 +66,14 @@ export const Info = styled.div`
     font-size: x-large;
     overflow: hidden;
     font-family: "Ubuntu", sans-serif;
-    //opacity: 0;
     white-space: nowrap;
     font-weight: 700;
     animation: ${type} 4s steps(60, end);
     &:nth-child(2) {
-      animation: ${type2} 8s steps(60, end);
+      animation: ${type2} 6s steps(60, end);
     }
     &:nth-child(3) {
-      animation: ${type2} 12s steps(60, end);
+      animation: ${type2} 8s steps(60, end);
     }
   }
   span {
@@ -160,9 +159,9 @@ export const Info = styled.div`
     a{
       button {
       margin: 3rem 0;
-      height: 5.5vh;
+      height: 4vh;
       width: 15vw;
-      font-size: 1vw;
+      font-size: 1.4vw;
     }
     }
   `}
@@ -177,18 +176,17 @@ export const Image = styled.div`
   background-repeat: no-repeat;
   background-position: 100% 100%;
   animation: ${animationDown} 5s linear;
-  ${media.between("medium", "large")`
+  ${media.between("871px", "large")`
     width: 80%;
     display: flex;
-  ////  background: blue;
-      margin: 0rem 0 0 0;
-      justify-content: center;
+    margin: 0rem 0 0 0;
+    justify-content: center;
   `}
   ${media.greaterThan("large")`
-      display: flex;
-      position: relative;
-      top: 1rem;
-      width: 80%;
-      background-size: 80% 100%;
+    display: flex;
+    position: relative;
+    top: 1rem;
+    width: 80%;
+    background-size: 80% 100%;
   `}
 `;
