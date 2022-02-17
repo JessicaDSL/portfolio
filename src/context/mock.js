@@ -5,11 +5,11 @@ export const pokedex = [
   {
     id: 1,
     name: "Pokedex",
-    subtitle: "Projeto focado em trabalhar o consumo de API",
+    subtitle: "Project focused on working on API consumption",
     url: "https://jessicadsl.github.io/pokeProject/",
     image: Pokedex,
     infoproject:
-      "Esse projeto é uma plataforma para listagem e visualização de pokémons, foi criado para estudo do consumo de API, passar props para componentes, ReactJS, react-router-dom, material-UI, styled-components, e layout responsivo, adiciona pokémons à lista, possui lista de pokémons favoritos e uma página com mais detalhes sobre o pokémon escolhido ao clicar na imagem. Nota: A listagem dos pokémons foi limitada em 150, pois a partir desse número a api apresenta alguns erros nas informações do pokémon. As características de batalha de cada pokémon na API não estão precisas, o motivo disso é que eu não possui na api a base do calcúlo de cada espécie, como são várias espécies, foi necessário limitar essas informações.",
+    "This project is a platform for listing and viewing pokemons, it was created to study API consumption, pass props to components, ReactJS, react-router-dom, material-UI, styled-components, and responsive layout, add pokemons to the list, it has a list of favorite pokémons and a page with more details about the pokémon chosen by clicking on the image. of each pokémon in the API are not accurate, the reason for this is that I don't have in the api the basis for the calculation of each species, as there are several species, it was necessary to limit this information.",
   },
 ];
 
@@ -21,6 +21,6 @@ export const GoJessy = [
     url: "https://jessicadsl.github.io/ecommercenewproject/",
     image: GoJessyStore,
     infoproject:
-      "O e-commerce funciona como uma loja virtual e representa um canal de venda online para as empresas. Permitindo assim que o lojista poss comercializar os seus produtos por meio de um site exclusivo. Alguns vendedores utilizam o e-commerce como fonte alternativa de vendas, associando-o a loja física.Uma infinidade de mercadorias pode ser vendida por meio dos e-commerces, que abrangem praticamente todo tipo de categoria. Alguns e-commerces brasileiros de destaque são os sites Amaro, Boticário e Reserva.Esse projeto se trata de uma aplicação de carrinho de compras de um ecommerce de tênis, um projeto em React, responsivo e altamente performático. Foi criado para aprender o uso de Context API, para que realizasse as seguintes funcionalidades:Adicionar um novo produto ao carrinho, remover um produto do carrinho, alterar a quantidade de um produto no carrinho, cálculo dos preços sub-total e total do carrinho, exibição de mensagens de erro e sucesso. Tecnologias utilizadas: ReactJS, Yarn, Axios, React-Toastify, Styled-components, Styled-media-query, Context API, layout responsivo.",
+      "E-commerce works as a virtual store and represents an online sales channel for companies. Thus allowing the shopkeeper to market their products through an exclusive website. Some sellers use e-commerce as an alternative source of sales, associating it with the physical store. A multitude of goods can be sold through e-commerces, which cover practically every type of category. Some prominent Brazilian e-commerce sites are Amaro, Boticário and Reserva. This project is a shopping cart application for a tennis e-commerce, a project in React, responsive and highly performant. It was created to learn the use of the Context API, so that it could perform the following functions: Add a new product to the cart, remove a product from the cart, change the quantity of a product in the cart, calculate the sub-total and total prices of the cart, display of error and success messages. Technologies used: ReactJS, Yarn, Axios, React-Toastify, Styled-components, Styled-media-query, Context API, responsive layout.",
   },
 ];
