@@ -8,7 +8,7 @@ export const Container = styled.div`
   align-items: center;
   color: #d1d5dc;
   font-size: small;
-  svg {
+  svg, a {
     color: #fd4370;
     margin: 0 0.5rem;
   }
