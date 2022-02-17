@@ -154,6 +154,16 @@ export const ProjectInfo = styled.div`
     }
     }
   `}
+  ${media.between("large", "huge")`
+    a{
+      button {
+        margin: 1.4rem 0 5rem 0;
+        height: 3rem;
+        width: 14rem;
+        font-size: large;
+      }
+    }
+  `}
   ${media.greaterThan("huge")`
   width: 92%;
   p {
@@ -168,6 +178,7 @@ export const ProjectInfo = styled.div`
     height: 3rem;
     width: 14rem;
       font-size: large;
+      
     }
   }
   `}
