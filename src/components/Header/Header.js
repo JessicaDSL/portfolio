@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Container, Logo, Nav, MenuDropdow, List, Content } from "./styles";
 import { BsFillHeartFill } from "react-icons/bs";
 import MenuIcon from "@mui/icons-material/Menu";
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import { CgFormatSlash } from "react-icons/cg";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+
+import { Container, Logo, Nav, MenuDropdow, List, Content } from "./styles";
 
 const Header = () => {
   const [state, setState] = useState(false);

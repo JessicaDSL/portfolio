@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap, Power2, Power0 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import { Container, Title, ProjectInfo, Content } from "./styles";
 
 const About = () => {

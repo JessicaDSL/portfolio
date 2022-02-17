@@ -1,13 +1,15 @@
 import React, { useRef, useEffect, useContext } from "react";
-import { gsap, Power2, Power0 } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.min.css";
-import {ProductContext} from '../../context/index'
-import { projects } from "./mock";
-import Project from '../Project'
 import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+import { toast } from "react-toastify";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap, Power2, Power0 } from "gsap";
+
+import Project from '../Project'
+import { projects } from "./mock";
+import {ProductContext} from '../../context/index'
+
+import "react-toastify/dist/ReactToastify.min.css";
 
 import {
   Background,
@@ -97,7 +99,7 @@ const Portfolio = () => {
             <button
               onClick={() =>
                 count >= projects.length
-                  ? toast.error("Esse item já esta no carrinho!", {
+                  ? toast.error("We don't have any new projects here yet!", {
                     theme: "dark",
                   })
                   : setCount(count + 1)
