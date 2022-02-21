@@ -7,18 +7,16 @@ import About from "../../components/About/About";
 import Contact from "../../components/Contact/Contact";
 import Footer from "../../components/Footer";
 
-import { Container } from "./styles";
-
 const Home = () => {
   return (
-    <Container>
+    <div>
       <Header />
       <HomePage />
       <Portfolio />
       <About />
       <Contact />
       <Footer />
-    </Container>
+    </div>
   );
 };
 
