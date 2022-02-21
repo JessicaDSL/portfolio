@@ -36,7 +36,7 @@ const HomePage = () => {
 
 
   return (
-    <Section>
+    <Section id="home">
       <Container>
         <Info>
           <p>

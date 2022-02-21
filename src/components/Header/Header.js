@@ -11,16 +11,18 @@ const Header = () => {
   return (
     <Container>
       <Content>
-        <Logo>
-          <MdKeyboardArrowLeft />
-          <BsFillHeartFill style={{ color: "#fd4370" }} />
-          <b>
-            <CgFormatSlash />
-          </b>
-          <span>
-            <MdKeyboardArrowRight />
-          </span>
-        </Logo>
+        <a href="#home">
+          <Logo>
+            <MdKeyboardArrowLeft />
+            <BsFillHeartFill style={{ color: "#fd4370" }} />
+            <b>
+              <CgFormatSlash />
+            </b>
+            <span>
+              <MdKeyboardArrowRight />
+            </span>
+          </Logo>
+        </a>
         <MenuDropdow className="dropdown">
           <button onClick={() => (state ? setState(false) : setState(true))}>
             <MenuIcon />
