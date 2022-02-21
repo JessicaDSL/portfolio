@@ -5,13 +5,13 @@ export const Container = styled.div`
   background: #141628;
   position: fixed;
   width: 100%;
-  height: 4.5vh;
+  height: 6vh;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
   ${media.greaterThan("huge")`
-  height: 8vh;
+  height: 10vh;
   `}
 `;
 
@@ -31,7 +31,7 @@ export const Logo = styled.div`
   justify-content: center;
   align-items: center;
   color: #eee;
-  font-size: medium;
+  font-size: large;
   svg {
     display: flex;
   }
@@ -40,14 +40,14 @@ export const Logo = styled.div`
     right: 10px;
   }
   b {
-    font-size: large;
+    font-size: x-large;
     position: relative;
     bottom: 1px;
   }
   ${media.greaterThan("huge")`
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     b{
-      font-size: 1.5vw;
+      font-size: 2vw;
     }
   `}
 `;
