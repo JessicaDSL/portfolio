@@ -32,12 +32,6 @@ export const Section = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  ${media.between("large", "huge")`
- // align-items: flex-end;
-  `}
-  ${media.greaterThan("large")`
-  //align-items: center;
-  `}
 `;
 
 export const Container = styled.div`
@@ -47,12 +41,6 @@ export const Container = styled.div`
   ${media.greaterThan("medium")`
     width: 80%;
     margin: 16rem 0 8rem 0;
-  `}
-  ${media.greaterThan("medium")`
-
-  `}
-  ${media.between("large", "huge")`
-  
   `}
 `;
 
@@ -68,12 +56,12 @@ export const Info = styled.div`
     font-family: "Ubuntu", sans-serif;
     white-space: nowrap;
     font-weight: 700;
-    animation: ${type} 4s steps(60, end);
+    animation: ${type} 2s steps(60, end);
     &:nth-child(2) {
-      animation: ${type2} 6s steps(60, end);
+      animation: ${type2} 4s steps(60, end);
     }
     &:nth-child(3) {
-      animation: ${type2} 8s steps(60, end);
+      animation: ${type2} 6s steps(60, end);
     }
   }
   span {
@@ -122,7 +110,6 @@ export const Info = styled.div`
   ${media.between("medium", "large")`
     width: 85%;
     margin: 0;
-   // background: red;
     justify-content: center;
     p {
       width: 100%;
@@ -159,7 +146,7 @@ export const Info = styled.div`
     a{
       button {
       margin: 3rem 0;
-      height: 4vh;
+      height: 6.5vh;
       width: 15vw;
       font-size: 1.4vw;
     }

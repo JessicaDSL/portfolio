@@ -22,13 +22,13 @@ const HomePage = () => {
   useEffect(() => {
     gsap.to(span.current, {
       y: 20,
-      delay: 8,
+      delay: 5,
       duration: 1,
       opacity: 1,
     });
     gsap.to(btn.current, {
       y: 0,
-      delay: 9,
+      delay: 6,
       duration: 1,
       opacity: 1,
     });
