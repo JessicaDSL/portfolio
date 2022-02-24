@@ -9,4 +9,4 @@ Esse é o meu portifolio, onde coloco os projetos que vou desenvolvendo ao longo
 
 ### Foto do site:
 
-![alt-text](https://ibb.co/rf2MtWy)
+![alt-text](https://media.giphy.com/media/3vpe3OW2ATGb6dJuaV/giphy.gif)
