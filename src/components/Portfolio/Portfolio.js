@@ -5,27 +5,20 @@ import { toast } from "react-toastify";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap, Power2, Power0 } from "gsap";
 
-import Project from '../Project'
+import Project from "../Project";
 import { projects } from "./mock";
-import {ProductContext} from '../../context/index'
+import { ProductContext } from "../../context/index";
 
 import "react-toastify/dist/ReactToastify.min.css";
 
-import {
-  Background,
-  Container,
-  Title,
-  Image,
-  Info,
-  Arrows,
-} from "./styles";
+import { Background, Container, Title, Image, Info, Arrows } from "./styles";
 
 const Portfolio = () => {
   const titleRef = useRef();
   const imageRef = useRef();
   const infoRef = useRef();
 
-  const {project, count, setCount} = useContext(ProductContext)
+  const { project, count, setCount } = useContext(ProductContext);
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -69,10 +62,10 @@ const Portfolio = () => {
           <span>
             <hr />
           </span>
-          <h3>Work</h3>
+          <h3>Portifolio</h3>
         </p>
         <p>
-          <h2>My Projects s2</h2>{" "}
+          <h2>Meus projetos s2</h2>{" "}
         </p>
       </Title>
 
@@ -81,17 +74,17 @@ const Portfolio = () => {
           <Arrows>
             <button
               onClick={() =>
-                count <= 1 ? toast.error("Esse item já esta no carrinho!", {
-                  theme: "dark",
-                }) : setCount(count - 1)
+                count <= 1
+                  ? toast.error("Esse item já esta no carrinho!", {
+                      theme: "dark",
+                    })
+                  : setCount(count - 1)
               }
             >
               <ArrowLeftIcon />
             </button>{" "}
             <strong>
-              {count <= 10
-                ? `0${count}`
-                : `${count }`}/
+              {count <= 10 ? `0${count}` : `${count}`}/
               {projects.length <= 10
                 ? `0${projects.length}`
                 : `${projects.length}`}
@@ -99,9 +92,9 @@ const Portfolio = () => {
             <button
               onClick={() =>
                 count >= projects.length
-                  ? toast.error("We don't have any new projects here yet!", {
-                    theme: "dark",
-                  })
+                  ? toast.error("Ainda não temos novos projetos por aqui!", {
+                      theme: "dark",
+                    })
                   : setCount(count + 1)
               }
             >

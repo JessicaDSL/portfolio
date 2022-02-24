@@ -5,7 +5,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Section, Image, Info, Container } from "./styles";
 
 const HomePage = () => {
-
   const imageRef = useRef();
   const span = useRef();
   const btn = useRef();
@@ -34,21 +33,18 @@ const HomePage = () => {
     });
   });
 
-
   return (
     <Section id="home">
       <Container>
         <Info>
+          <p>Hello World,</p>
           <p>
-            Hello World,
+            Meu nome é <strong>Jéssica Lima</strong>,
           </p>
-          <p>
-            I'm <strong>Jéssica Lima</strong>,
-          </p>
-          <p> a front-end developer! :)</p>
-          <span ref={span}>Come and see my work. </span>
+          <p> uma front-end developer! :)</p>
+          <span ref={span}>Venha e conheça meu trabalho. </span>
           <a href="#portfolio">
-            <button ref={btn}>My Work!</button>
+            <button ref={btn}>Portfolio</button>
           </a>
         </Info>
         <Image ref={imageRef}></Image>

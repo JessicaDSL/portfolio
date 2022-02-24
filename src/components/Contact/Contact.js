@@ -50,31 +50,46 @@ const Contact = () => {
           <span>
             <hr />
           </span>
-          <h3>Connect</h3>
+          <h3>Contato</h3>
         </p>
         <p>
-          <h2>Did you like my work and are interested in contacting me?</h2>{" "}
+          <h2>
+            Gostou do meu trabalho e tem interesse em entrar em contato comigo?
+          </h2>{" "}
         </p>
       </Title>
       <Email>
         <p>
-          Contact me through social media, filling out the contact form, or
-          simply send me an email: <span>jessikurt@gmail.com</span>
+          Entre em contato comigo pelas redes sociais, preenchendo o formulário
+          de contato ou basta me enviar um e-mail:{" "}
+          <span>jessikurt@gmail.com</span>
         </p>
       </Email>
       <ul>
         <li>
-          <a href="https://www.github.com/jessicaDSL" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.github.com/jessicaDSL"
+            target="_blank"
+            rel="noreferrer"
+          >
             <GitHubIcon />
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/jessicadsl" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.linkedin.com/in/jessicadsl"
+            target="_blank"
+            rel="noreferrer"
+          >
             <LinkedInIcon />
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/jlkisuco" target="_blank" rel="noreferrer">
+          <a
+            href="https://twitter.com/jlkisuco"
+            target="_blank"
+            rel="noreferrer"
+          >
             <TwitterIcon />
           </a>
         </li>

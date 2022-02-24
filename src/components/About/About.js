@@ -52,10 +52,10 @@ const About = () => {
           <span>
             <hr />
           </span>
-          <h3>About me</h3>
+          <h3>Sobre mim</h3>
         </p>
         <p>
-          <h2>One minute to get to know me better</h2>{" "}
+          <h2>Um momento para me conhecer melhor</h2>{" "}
         </p>
       </Title>
       <Content className="info" ref={infoRef}>
@@ -63,30 +63,30 @@ const About = () => {
           <div>
             <span>
               <hr />
-              Who am I
+              Quem eu sou
             </span>
             <p>
-              I am passionate about technology, games, creativity, and making
-              dreams come true through the logic of programming.
+              Sou apaixonada por tecnologia, jogos, criatividade e fazer sonhos
+              se tornam realidade através da lógica da programação.
             </p>
           </div>
           <div>
             <span>
               <hr />
-              My Skills
+              Minhas habilidades
             </span>
             <p>
-              I am currently focused on website development and maintenance.
-              Using{" "}
+              Atualmente estou focada no desenvolvimento e manutenção de sites.
+              Usando
               <b>
                 Adobe Photoshop, HTML5, CSS3, Flexbox, Grid, Javascript, Gsap,
                 Bootstrap, Material-UI, Storybook, Context API, ReactJS
               </b>{" "}
-              and <b>StyledComponents</b>.
+              e <b>StyledComponents</b>.
             </p>
           </div>
           <a href="#contact">
-            <button>Contact!</button>
+            <button>Contacte-me!</button>
           </a>
         </ProjectInfo>
       </Content>
