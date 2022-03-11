@@ -1,10 +1,12 @@
 # Meu portfolio s2
 
-Esse é o meu portifolio, onde coloco os projetos que vou desenvolvendo ao longo dos anos de estudos voltados ao Frontend, com foco em React js.
+Esse é o meu portifolio, onde coloco os projetos que vou desenvolvendo para aplicar os estudos voltados ao Frontend, com foco em React JS.
 
-## link:
+Link para o projeto: [GoJessy Portfolio](https://jessicadsl.github.io/portfolio/#home)
 
-[GoJessy Portfolio](https://jessicadsl.github.io/portfolio/#home)
+## Sobre o Projeto
+
+Esse site foi criado para demonstração dos projetos criados por mim, as tecnologias usadas na criação do site foram ReactJS, Styled-components, React-Toastify, React-router-dom, Material-UI, gsap, keyframes, emailjs
 
 
 ### Foto do site:
