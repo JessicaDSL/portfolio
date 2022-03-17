@@ -1,7 +1,7 @@
 import React, { createContext, useState, useEffect } from "react";
 import "react-toastify/dist/ReactToastify.min.css";
 
-import { pokedex, GoJessy } from "./mock";
+import { pokedex, GoJessy, TodoList } from "./mock";
 
 export const ProductContext = createContext({});
 
@@ -15,7 +15,9 @@ export const ProductProvider = ({ children }) => {
       setProject(pokedex);
     } else if (count === 2) {
       setProject(GoJessy);
-    } 
+    } else if(count === 3) {
+      setProject(TodoList);
+    }
   }, [count]);
 
   return (
