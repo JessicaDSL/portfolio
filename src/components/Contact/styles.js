@@ -4,6 +4,7 @@ import media from "styled-media-query";
 export const Container = styled.div`
   background: #1b1e32;
   width: 100%;
+  padding: 0 0 7rem 0;
   color: #d1d5dc;
   display: flex;
   flex-direction: column;
@@ -50,9 +51,9 @@ export const Container = styled.div`
 
     ${media.greaterThan("huge")`
     justify-content: flex-start;
-    margin: 0;
+    
     width: 80%;
-    margin: 1.2rem 0;
+    //margin: 1.2rem 0;
       li {
         width: 4.8rem;
         height: 4.8rem;
