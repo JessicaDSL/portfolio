@@ -69,7 +69,7 @@ export const Container = styled.div`
     p {
       max-height: 150px;
       margin: 1rem 0 1rem 0;
-      font-size: medium;
+      font-size: large;
     }
     a {
       button {
@@ -94,7 +94,7 @@ export const Container = styled.div`
       max-height: 190px;
       max-width: 85%;
       margin: 1rem 0 0rem 0;
-      font-size: medium;
+      font-size: x-large;
     }
   `}
 `;
