@@ -58,8 +58,7 @@ const Contact = () => {
       </Title>
       <Email>
         <p>
-          Entre em contato comigo pelas redes sociais, preenchendo o formulário
-          de contato ou basta me enviar um e-mail:{" "}
+          Entre em contato comigo pelas redes sociais ou basta me enviar um e-mail:{" "}
           <span>jessikurt@gmail.com</span>
         </p>
       </Email>
