@@ -5,8 +5,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
-import FormRequest from "../FormRequest";
-
 import { Container, Title, Email } from "./styles";
 
 const Contact = () => {
@@ -94,7 +92,6 @@ const Contact = () => {
           </a>
         </li>
       </ul>
-      <FormRequest />
     </Container>
   );
 };
