@@ -79,10 +79,10 @@ const About = () => {
               Atualmente estou focada no desenvolvimento e manutenção de sites.
               Usando
               <b>
-                Adobe Photoshop, HTML5, CSS3, Flexbox, Grid, Javascript, Gsap,
-                Bootstrap, Material-UI, Storybook, Context API, ReactJS
+                Adobe XD, Figma, HTML, CSS, Flexbox, Grid, Javascript, Gsap,
+                Bootstrap, Material-UI, Storybook, Context API, React JS
               </b>{" "}
-              e <b>StyledComponents</b>.
+              e<b>StyledComponents</b>.
             </p>
           </div>
           <a href="#contact">

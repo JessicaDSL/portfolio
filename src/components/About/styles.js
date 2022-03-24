@@ -79,6 +79,9 @@ export const ProjectInfo = styled.div`
   div {
     margin: 1.4rem 0;
   }
+  b {
+    margin: 0 0 0 .5rem;
+  }
   p {
     color: #d1d5dc;
     letter-spacing: 0.2px;
